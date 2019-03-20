@@ -1,0 +1,55 @@
+[Play_RTMP]
+URL=rtmp://183.146.213.65/live/hks?domain=live.hkstv.hk.lxdns.com
+;#define	QCPLAY_OPEN_SAME_SOURCE	0X02000000
+OPENFLAG=0X02000000
+;#define	QCPLAY_OPEN_VIDDEC_HW   0X01000000
+HWDEC=0
+STARTPOS=0
+RATIO=1:1
+SPEED=1.0
+OFFSETTIME=0
+SEEKMODE=0
+;QC_IOPROTOCOL_HTTPPD 6
+PREPROTOCOL=0
+PREFERFORMAT=0
+SAVEPATH=c:/temp/qplayer/pdfile
+EXTNAME=mp4
+;UPD 0, TCP 1
+RTSPMODE=0
+CONNECTTIMEOUT=0
+READTIMEOUT=0
+;HEADTEXT=username=qiniu:password=qiniu
+;DNSSERVER=0.0.0.0
+DNSDETECT=live.hkstv.hk.lxdns.com
+MAXBUFFTIME=0
+MINBUFFTIME=0
+;DRMKEYTEXT=keytext
+LOGLEVEL=0
+PRELOADTIME=0
+PLAYLOOP=0
+; 0 next, 1 continue with setpos(0)
+PLAYCOMPLETE=0
+; 1 close before open next file
+EXITCLOSE=0
+ACTION=exit:50000
+; 0 enable, 1 disable
+ACTION=disvideo:1000:1
+ACTION=disvideo:2000:0
+; zoom left, top, right, bottom
+;ACTION=zoom:5000:100:100:300:260
+ACTION=setview:2000:0
+ACTION=setview:5000:1
+
+[Play_M3U8]
+URL=http://ojpjb7lbl.bkt.clouddn.com/bipbopall.m3u8
+OPENFLAG=0X02000000
+EXITCLOSE=0
+ACTION=exit:5000
+;ACTION=seek:1000:500000
+;ACTION=seek:5000:150000
+;ACTION=downpause:5000:1
+;ACTION=downpause:8000:0
+;ACTION=pasue:2000
+;ACTION=play:3000
+;ACTION=playstream:5000:2
+;ACTION=playstream:1000:1

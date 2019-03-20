@@ -1,0 +1,1 @@
+    This folder contains bin files for android.

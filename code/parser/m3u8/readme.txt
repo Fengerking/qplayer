@@ -1,0 +1,1 @@
+This folder contains m3u8 (hls) file parser files.

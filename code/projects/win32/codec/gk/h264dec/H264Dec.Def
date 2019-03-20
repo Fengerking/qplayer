@@ -1,0 +1,6 @@
+LIBRARY	H264Dec.dll
+
+EXPORTS
+	ttGetH264DecAPI
+	
+	

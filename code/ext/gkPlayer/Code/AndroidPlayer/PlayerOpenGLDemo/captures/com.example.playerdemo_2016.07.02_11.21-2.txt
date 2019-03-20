@@ -1,0 +1,174 @@
+CURRENT STATS:
+System memory usage:
+  SOff/Norm: 1 samples:
+    Cached: 897MB min, 897MB avg, 897MB max
+    Free: 123MB min, 123MB avg, 123MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 290MB min, 290MB avg, 290MB max
+    Native: 248MB min, 248MB avg, 248MB max
+  SOn /Norm: 2 samples:
+    Cached: 886MB min, 888MB avg, 890MB max
+    Free: 62MB min, 67MB avg, 72MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 290MB min, 290MB avg, 290MB max
+    Native: 271MB min, 275MB avg, 278MB max
+
+Per-Package Stats:
+  * com.example.playerdemo / u0a183 / v1:
+      * com.example.playerdemo / u0a183 / v1:
+               TOTAL: 27% (73MB-111MB-146MB/61MB-98MB-132MB over 13)
+                 Top: 27% (73MB-111MB-146MB/61MB-98MB-132MB over 13)
+            Bg TOTAL: 50% (43MB-43MB-44MB/30MB-31MB-32MB over 3)
+          (Last Act): 0.32%
+            (Cached): 50% (43MB-43MB-44MB/30MB-31MB-32MB over 3)
+
+Summary:
+  * com.example.playerdemo / u0a183 / v1:
+           TOTAL: 27% (73MB-111MB-146MB/61MB-98MB-132MB over 13)
+             Top: 27% (73MB-111MB-146MB/61MB-98MB-132MB over 13)
+        Bg TOTAL: 50% (43MB-43MB-44MB/30MB-31MB-32MB over 3)
+      (Last Act): 0.32%
+        (Cached): 50% (43MB-43MB-44MB/30MB-31MB-32MB over 3)
+
+Run time Stats:
+  SOff/Norm: +18m43s585ms
+  SOn /Norm: +14m50s860ms (running)
+      TOTAL: +33m34s445ms
+
+Memory usage:
+  Kernel : 290MB (24 samples)
+  Native : 266MB (24 samples)
+  Persist: 599MB (66 samples)
+  Top    : 122MB (55 samples)
+  ImpFg  : 232MB (158 samples)
+  ImpBg  : 81MB (12 samples)
+  Service: 197MB (210 samples)
+  Receivr: 52KB (197 samples)
+  Home   : 23MB (14 samples)
+  LastAct: 143KB (3 samples)
+  CchAct : 22MB (6 samples)
+  CchEmty: 339MB (225 samples)
+  Cached : 891MB (24 samples)
+  Free   : 86MB (24 samples)
+  TOTAL  : 3.1GB
+  ServRst: 108KB (33 samples)
+
+          Start time: 2016-07-02 10:48:00
+  Total elapsed time: +33m34s453ms (partial) libart.so
+
+AGGREGATED OVER LAST 24 HOURS:
+System memory usage:
+  SOff/Norm: 5 samples:
+    Cached: 762MB min, 871MB avg, 0.93GB max
+    Free: 123MB min, 162MB avg, 227MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 285MB min, 296MB avg, 315MB max
+    Native: 208MB min, 253MB avg, 306MB max
+  SOn /Norm: 14 samples:
+    Cached: 651MB min, 807MB avg, 0.93GB max
+    Free: 28MB min, 90MB avg, 227MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 263MB min, 312MB avg, 343MB max
+    Native: 179MB min, 244MB avg, 331MB max
+
+Per-Package Stats:
+  * com.example.playerdemo / u0a183 / v1:
+      * com.example.playerdemo / u0a183 / v1:
+               TOTAL: 3.0% (71MB-110MB-146MB/61MB-97MB-132MB over 19)
+                 Top: 3.0% (71MB-110MB-146MB/61MB-97MB-132MB over 19)
+            Bg TOTAL: 30% (23MB-40MB-47MB/14MB-27MB-32MB over 14)
+          (Last Act): 0.13%
+            (Cached): 30% (23MB-40MB-47MB/14MB-27MB-32MB over 14)
+
+Summary:
+  * com.example.playerdemo / u0a183 / v1:
+           TOTAL: 3.0% (71MB-110MB-146MB/61MB-97MB-132MB over 19)
+             Top: 3.0% (71MB-110MB-146MB/61MB-97MB-132MB over 19)
+        Bg TOTAL: 30% (23MB-40MB-47MB/14MB-27MB-32MB over 14)
+      (Last Act): 0.13%
+        (Cached): 30% (23MB-40MB-47MB/14MB-27MB-32MB over 14)
+
+Run time Stats:
+  SOff/Norm: +5h43m54s477ms
+  SOn /Norm: +46m57s926ms
+      TOTAL: +6h30m52s403ms
+
+Memory usage:
+  Kernel : 298MB (133 samples)
+  Native : 252MB (133 samples)
+  Persist: 619MB (529 samples)
+  Top    : 142MB (767 samples)
+  ImpFg  : 240MB (1915 samples)
+  ImpBg  : 95MB (179 samples)
+  Service: 132MB (2845 samples)
+  Receivr: 191KB (2764 samples)
+  Home   : 15MB (11 samples)
+  LastAct: 14MB (127 samples)
+  CchAct : 170MB (90 samples)
+  CchCAct: 59MB (42 samples)
+  CchEmty: 285MB (1482 samples)
+  Cached : 863MB (133 samples)
+  Free   : 153MB (133 samples)
+  TOTAL  : 3.3GB
+  ServRst: 129KB (1152 samples)
+
+          Start time: 2016-06-30 17:19:00
+  Total elapsed time: +1d17h58m3s171ms (partial) libart.so
+
+AGGREGATED OVER LAST 3 HOURS:
+System memory usage:
+  SOff/Norm: 3 samples:
+    Cached: 887MB min, 0.89GB avg, 0.93GB max
+    Free: 123MB min, 146MB avg, 164MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 285MB min, 288MB avg, 290MB max
+    Native: 248MB min, 277MB avg, 306MB max
+  SOn /Norm: 5 samples:
+    Cached: 882MB min, 0.89GB avg, 0.93GB max
+    Free: 28MB min, 93MB avg, 227MB max
+    ZRam: 0.00 min, 0.00 avg, 0.00 max
+    Kernel: 263MB min, 284MB avg, 290MB max
+    Native: 271MB min, 296MB avg, 331MB max
+
+Per-Package Stats:
+  * com.example.playerdemo / u0a183 / v1:
+      * com.example.playerdemo / u0a183 / v1:
+               TOTAL: 9.4% (73MB-112MB-146MB/61MB-99MB-132MB over 18)
+                 Top: 9.4% (73MB-112MB-146MB/61MB-99MB-132MB over 18)
+            Bg TOTAL: 59% (27MB-41MB-47MB/15MB-28MB-32MB over 10)
+          (Last Act): 0.42%
+            (Cached): 59% (27MB-41MB-47MB/15MB-28MB-32MB over 10)
+
+Summary:
+  * com.example.playerdemo / u0a183 / v1:
+           TOTAL: 9.4% (73MB-112MB-146MB/61MB-99MB-132MB over 18)
+             Top: 9.4% (73MB-112MB-146MB/61MB-99MB-132MB over 18)
+        Bg TOTAL: 59% (27MB-41MB-47MB/15MB-28MB-32MB over 10)
+      (Last Act): 0.42%
+        (Cached): 59% (27MB-41MB-47MB/15MB-28MB-32MB over 10)
+
+Run time Stats:
+  SOff/Norm: +1h36m18s184ms
+  SOn /Norm: +27m30s96ms
+      TOTAL: +2h3m48s280ms
+
+Memory usage:
+  Kernel : 287MB (56 samples)
+  Native : 281MB (56 samples)
+  Persist: 620MB (204 samples)
+  Top    : 123MB (150 samples)
+  ImpFg  : 225MB (685 samples)
+  ImpBg  : 79MB (56 samples)
+  Service: 192MB (1094 samples)
+  Receivr: 486KB (1220 samples)
+  Home   : 7.9MB (6 samples)
+  LastAct: 196KB (42 samples)
+  CchAct : 22MB (16 samples)
+  CchEmty: 356MB (696 samples)
+  Cached : 0.89GB (56 samples)
+  Free   : 135MB (56 samples)
+  TOTAL  : 3.2GB
+  ServRst: 185KB (311 samples)
+
+          Start time: 2016-07-01 17:46:39
+  Total elapsed time: +17h34m53s790ms (partial) libart.so

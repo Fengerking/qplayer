@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC85D2AB1DFFCEBA00052686 /* qplayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EC85D2AA1DFFCEBA00052686 /* qplayer.h */; };
+		EC85D2AD1DFFCEBA00052686 /* qplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EC85D2AC1DFFCEBA00052686 /* qplayer.m */; };
+		EC85DB831DFFCF1200052686 /* CBaseObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85D2B51DFFCF0E00052686 /* CBaseObject.cpp */; };
+		EC85DB841DFFCF1200052686 /* CBitReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85D2B71DFFCF0E00052686 /* CBitReader.cpp */; };
+		EC85DB851DFFCF1200052686 /* CBuffMng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85D2B91DFFCF0E00052686 /* CBuffMng.cpp */; };
+		EC85DB861DFFCF1200052686 /* CBuffTrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85D2BB1DFFCF0E00052686 /* CBuffTrace.cpp */; };
+		EC85DB871DFFCF1200052686 /* CMsgMng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85D2BD1DFFCF0E00052686 /* CMsgMng.cpp */; };
+		EC85DB881DFFCF1200052686 /* CMutexLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85D2BF1DFFCF0E00052686 /* CMutexLock.cpp */; };
+		EC85DB891DFFCF1200052686 /* CNodeList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85D2C11DFFCF0E00052686 /* CNodeList.cpp */; };
+		EC85DB8A1DFFCF1200052686 /* CThreadSem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85D2C31DFFCF0E00052686 /* CThreadSem.cpp */; };
+		EC85DB8B1DFFCF1200052686 /* CThreadWork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85D2C51DFFCF0E00052686 /* CThreadWork.cpp */; };
+		EC85DEE11DFFCF1700052686 /* CBaseIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB111DFFCF1200052686 /* CBaseIO.cpp */; };
+		EC85DEE21DFFCF1700052686 /* CFileIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB131DFFCF1200052686 /* CFileIO.cpp */; };
+		EC85DEE31DFFCF1700052686 /* qcIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB171DFFCF1200052686 /* qcIO.cpp */; };
+		EC85DEE81DFFCF1700052686 /* CBaseParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB271DFFCF1200052686 /* CBaseParser.cpp */; };
+		EC85DEE91DFFCF1700052686 /* CFLVParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB2A1DFFCF1200052686 /* CFLVParser.cpp */; };
+		EC85DEEA1DFFCF1700052686 /* CFLVTag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB2C1DFFCF1200052686 /* CFLVTag.cpp */; };
+		EC85DEEB1DFFCF1700052686 /* qcParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB331DFFCF1200052686 /* qcParser.cpp */; };
+		EC85DEF21DFFCF1700052686 /* UAVParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB731DFFCF1200052686 /* UAVParser.cpp */; };
+		EC85DEF31DFFCF1700052686 /* UBuffTrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB751DFFCF1200052686 /* UBuffTrace.cpp */; };
+		EC85DEF41DFFCF1700052686 /* UIntReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB771DFFCF1200052686 /* UIntReader.cpp */; };
+		EC85DEF51DFFCF1700052686 /* ULibFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB791DFFCF1200052686 /* ULibFunc.cpp */; };
+		EC85DEF61DFFCF1700052686 /* ULogFunc.c in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB7B1DFFCF1200052686 /* ULogFunc.c */; };
+		EC85DEF71DFFCF1700052686 /* UMsgMng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB7D1DFFCF1200052686 /* UMsgMng.cpp */; };
+		EC85DEF81DFFCF1700052686 /* USystemFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB7F1DFFCF1200052686 /* USystemFunc.cpp */; };
+		EC85DEF91DFFCF1700052686 /* UThreadFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DB811DFFCF1200052686 /* UThreadFunc.cpp */; };
+		EC85DF1D1E00D8AA00052686 /* CTcpIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DF1B1E00D8AA00052686 /* CTcpIO.cpp */; };
+		EC85DF231E00F80D00052686 /* CUrl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DF211E00F80D00052686 /* CUrl.cpp */; };
+		EC85DF261E00F97600052686 /* USocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC85DF241E00F97600052686 /* USocket.cpp */; };
+		ECE0CE631E019A7A004CEBD7 /* CHttpIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECE0CE611E019A7A004CEBD7 /* CHttpIO.cpp */; };
+		ECE0CE891E028AAB004CEBD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE0CE881E028AAB004CEBD7 /* main.m */; };
+		ECE0CE8C1E028AAB004CEBD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE0CE8B1E028AAB004CEBD7 /* AppDelegate.m */; };
+		ECE0CE8F1E028AAB004CEBD7 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = ECE0CE8E1E028AAB004CEBD7 /* ViewController.mm */; };
+		ECE0CE921E028AAB004CEBD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE0CE901E028AAB004CEBD7 /* Main.storyboard */; };
+		ECE0CE941E028AAB004CEBD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECE0CE931E028AAB004CEBD7 /* Assets.xcassets */; };
+		ECE0CE971E028AAB004CEBD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE0CE951E028AAB004CEBD7 /* LaunchScreen.storyboard */; };
+		ECE0CEA21E028AAB004CEBD7 /* qplayerTestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE0CEA11E028AAB004CEBD7 /* qplayerTestsTests.m */; };
+		ECE0CEAA1E028AC5004CEBD7 /* libqplayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC85D2A71DFFCEBA00052686 /* libqplayer.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECE0CE9E1E028AAB004CEBD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC85D29F1DFFCEBA00052686 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECE0CE841E028AAB004CEBD7;
+			remoteInfo = qplayerTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC85D2A51DFFCEBA00052686 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				EC85D2AB1DFFCEBA00052686 /* qplayer.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC85D2A71DFFCEBA00052686 /* libqplayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libqplayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC85D2AA1DFFCEBA00052686 /* qplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = qplayer.h; sourceTree = "<group>"; };
+		EC85D2AC1DFFCEBA00052686 /* qplayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = qplayer.m; sourceTree = "<group>"; };
+		EC85D2B51DFFCF0E00052686 /* CBaseObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBaseObject.cpp; sourceTree = "<group>"; };
+		EC85D2B61DFFCF0E00052686 /* CBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBaseObject.h; sourceTree = "<group>"; };
+		EC85D2B71DFFCF0E00052686 /* CBitReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBitReader.cpp; sourceTree = "<group>"; };
+		EC85D2B81DFFCF0E00052686 /* CBitReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBitReader.h; sourceTree = "<group>"; };
+		EC85D2B91DFFCF0E00052686 /* CBuffMng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBuffMng.cpp; sourceTree = "<group>"; };
+		EC85D2BA1DFFCF0E00052686 /* CBuffMng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBuffMng.h; sourceTree = "<group>"; };
+		EC85D2BB1DFFCF0E00052686 /* CBuffTrace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBuffTrace.cpp; sourceTree = "<group>"; };
+		EC85D2BC1DFFCF0E00052686 /* CBuffTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBuffTrace.h; sourceTree = "<group>"; };
+		EC85D2BD1DFFCF0E00052686 /* CMsgMng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMsgMng.cpp; sourceTree = "<group>"; };
+		EC85D2BE1DFFCF0E00052686 /* CMsgMng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMsgMng.h; sourceTree = "<group>"; };
+		EC85D2BF1DFFCF0E00052686 /* CMutexLock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMutexLock.cpp; sourceTree = "<group>"; };
+		EC85D2C01DFFCF0E00052686 /* CMutexLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMutexLock.h; sourceTree = "<group>"; };
+		EC85D2C11DFFCF0E00052686 /* CNodeList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CNodeList.cpp; sourceTree = "<group>"; };
+		EC85D2C21DFFCF0E00052686 /* CNodeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNodeList.h; sourceTree = "<group>"; };
+		EC85D2C31DFFCF0E00052686 /* CThreadSem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CThreadSem.cpp; sourceTree = "<group>"; };
+		EC85D2C41DFFCF0E00052686 /* CThreadSem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CThreadSem.h; sourceTree = "<group>"; };
+		EC85D2C51DFFCF0E00052686 /* CThreadWork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CThreadWork.cpp; sourceTree = "<group>"; };
+		EC85D2C61DFFCF0E00052686 /* CThreadWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CThreadWork.h; sourceTree = "<group>"; };
+		EC85D2C71DFFCF0E00052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85D4121DFFCF0F00052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB061DFFCF1200052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB081DFFCF1200052686 /* qcData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qcData.h; sourceTree = "<group>"; };
+		EC85DB091DFFCF1200052686 /* qcDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qcDef.h; sourceTree = "<group>"; };
+		EC85DB0A1DFFCF1200052686 /* qcErr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qcErr.h; sourceTree = "<group>"; };
+		EC85DB0B1DFFCF1200052686 /* qcIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qcIO.h; sourceTree = "<group>"; };
+		EC85DB0C1DFFCF1200052686 /* qcMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qcMsg.h; sourceTree = "<group>"; };
+		EC85DB0D1DFFCF1200052686 /* qcParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qcParser.h; sourceTree = "<group>"; };
+		EC85DB0E1DFFCF1200052686 /* qcType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qcType.h; sourceTree = "<group>"; };
+		EC85DB0F1DFFCF1200052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB111DFFCF1200052686 /* CBaseIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBaseIO.cpp; sourceTree = "<group>"; };
+		EC85DB121DFFCF1200052686 /* CBaseIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBaseIO.h; sourceTree = "<group>"; };
+		EC85DB131DFFCF1200052686 /* CFileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CFileIO.cpp; sourceTree = "<group>"; };
+		EC85DB141DFFCF1200052686 /* CFileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFileIO.h; sourceTree = "<group>"; };
+		EC85DB161DFFCF1200052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB171DFFCF1200052686 /* qcIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = qcIO.cpp; sourceTree = "<group>"; };
+		EC85DB181DFFCF1200052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB1A1DFFCF1200052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB271DFFCF1200052686 /* CBaseParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBaseParser.cpp; sourceTree = "<group>"; };
+		EC85DB281DFFCF1200052686 /* CBaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBaseParser.h; sourceTree = "<group>"; };
+		EC85DB2A1DFFCF1200052686 /* CFLVParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CFLVParser.cpp; sourceTree = "<group>"; };
+		EC85DB2B1DFFCF1200052686 /* CFLVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFLVParser.h; sourceTree = "<group>"; };
+		EC85DB2C1DFFCF1200052686 /* CFLVTag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CFLVTag.cpp; sourceTree = "<group>"; };
+		EC85DB2D1DFFCF1200052686 /* CFLVTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFLVTag.h; sourceTree = "<group>"; };
+		EC85DB2E1DFFCF1200052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB301DFFCF1200052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB321DFFCF1200052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB331DFFCF1200052686 /* qcParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = qcParser.cpp; sourceTree = "<group>"; };
+		EC85DB341DFFCF1200052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB361DFFCF1200052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB6E1DFFCF1200052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB701DFFCF1200052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB721DFFCF1200052686 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EC85DB731DFFCF1200052686 /* UAVParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UAVParser.cpp; sourceTree = "<group>"; };
+		EC85DB741DFFCF1200052686 /* UAVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAVParser.h; sourceTree = "<group>"; };
+		EC85DB751DFFCF1200052686 /* UBuffTrace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UBuffTrace.cpp; sourceTree = "<group>"; };
+		EC85DB761DFFCF1200052686 /* UBuffTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBuffTrace.h; sourceTree = "<group>"; };
+		EC85DB771DFFCF1200052686 /* UIntReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIntReader.cpp; sourceTree = "<group>"; };
+		EC85DB781DFFCF1200052686 /* UIntReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIntReader.h; sourceTree = "<group>"; };
+		EC85DB791DFFCF1200052686 /* ULibFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ULibFunc.cpp; sourceTree = "<group>"; };
+		EC85DB7A1DFFCF1200052686 /* ULibFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ULibFunc.h; sourceTree = "<group>"; };
+		EC85DB7B1DFFCF1200052686 /* ULogFunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ULogFunc.c; sourceTree = "<group>"; };
+		EC85DB7C1DFFCF1200052686 /* ULogFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ULogFunc.h; sourceTree = "<group>"; };
+		EC85DB7D1DFFCF1200052686 /* UMsgMng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UMsgMng.cpp; sourceTree = "<group>"; };
+		EC85DB7E1DFFCF1200052686 /* UMsgMng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMsgMng.h; sourceTree = "<group>"; };
+		EC85DB7F1DFFCF1200052686 /* USystemFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USystemFunc.cpp; sourceTree = "<group>"; };
+		EC85DB801DFFCF1200052686 /* USystemFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USystemFunc.h; sourceTree = "<group>"; };
+		EC85DB811DFFCF1200052686 /* UThreadFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UThreadFunc.cpp; sourceTree = "<group>"; };
+		EC85DB821DFFCF1200052686 /* UThreadFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UThreadFunc.h; sourceTree = "<group>"; };
+		EC85DF1B1E00D8AA00052686 /* CTcpIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTcpIO.cpp; sourceTree = "<group>"; };
+		EC85DF1C1E00D8AA00052686 /* CTcpIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTcpIO.h; sourceTree = "<group>"; };
+		EC85DF211E00F80D00052686 /* CUrl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CUrl.cpp; sourceTree = "<group>"; };
+		EC85DF221E00F80D00052686 /* CUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUrl.h; sourceTree = "<group>"; };
+		EC85DF241E00F97600052686 /* USocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USocket.cpp; sourceTree = "<group>"; };
+		EC85DF251E00F97600052686 /* USocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USocket.h; sourceTree = "<group>"; };
+		ECE0CE611E019A7A004CEBD7 /* CHttpIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CHttpIO.cpp; sourceTree = "<group>"; };
+		ECE0CE621E019A7A004CEBD7 /* CHttpIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHttpIO.h; sourceTree = "<group>"; };
+		ECE0CE851E028AAB004CEBD7 /* qplayerTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qplayerTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECE0CE881E028AAB004CEBD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECE0CE8A1E028AAB004CEBD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECE0CE8B1E028AAB004CEBD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECE0CE8D1E028AAB004CEBD7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ECE0CE8E1E028AAB004CEBD7 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		ECE0CE911E028AAB004CEBD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECE0CE931E028AAB004CEBD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECE0CE961E028AAB004CEBD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECE0CE981E028AAB004CEBD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE0CE9D1E028AAB004CEBD7 /* qplayerTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qplayerTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECE0CEA11E028AAB004CEBD7 /* qplayerTestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = qplayerTestsTests.m; sourceTree = "<group>"; };
+		ECE0CEA31E028AAB004CEBD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC85D2A41DFFCEBA00052686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE0CE821E028AAB004CEBD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECE0CEAA1E028AC5004CEBD7 /* libqplayer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE0CE9A1E028AAB004CEBD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC85D29E1DFFCEBA00052686 = {
+			isa = PBXGroup;
+			children = (
+				EC85D2B31DFFCF0E00052686 /* code */,
+				EC85D2A91DFFCEBA00052686 /* qplayer */,
+				ECE0CE861E028AAB004CEBD7 /* qplayerTests */,
+				ECE0CEA01E028AAB004CEBD7 /* qplayerTestsTests */,
+				EC85D2A81DFFCEBA00052686 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC85D2A81DFFCEBA00052686 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC85D2A71DFFCEBA00052686 /* libqplayer.a */,
+				ECE0CE851E028AAB004CEBD7 /* qplayerTests.app */,
+				ECE0CE9D1E028AAB004CEBD7 /* qplayerTestsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC85D2A91DFFCEBA00052686 /* qplayer */ = {
+			isa = PBXGroup;
+			children = (
+				EC85D2AA1DFFCEBA00052686 /* qplayer.h */,
+				EC85D2AC1DFFCEBA00052686 /* qplayer.m */,
+			);
+			path = qplayer;
+			sourceTree = "<group>";
+		};
+		EC85D2B31DFFCF0E00052686 /* code */ = {
+			isa = PBXGroup;
+			children = (
+				EC85D2B41DFFCF0E00052686 /* base */,
+				EC85D2C81DFFCF0E00052686 /* codec */,
+				EC85D4131DFFCF0F00052686 /* ext */,
+				EC85DB071DFFCF1200052686 /* include */,
+				EC85DB101DFFCF1200052686 /* io */,
+				EC85DB261DFFCF1200052686 /* parser */,
+				EC85DB6E1DFFCF1200052686 /* readme.txt */,
+				EC85DB6F1DFFCF1200052686 /* sink */,
+				EC85DB711DFFCF1200052686 /* util */,
+			);
+			name = code;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		EC85D2B41DFFCF0E00052686 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				EC85D2B51DFFCF0E00052686 /* CBaseObject.cpp */,
+				EC85D2B61DFFCF0E00052686 /* CBaseObject.h */,
+				EC85D2B71DFFCF0E00052686 /* CBitReader.cpp */,
+				EC85D2B81DFFCF0E00052686 /* CBitReader.h */,
+				EC85D2B91DFFCF0E00052686 /* CBuffMng.cpp */,
+				EC85D2BA1DFFCF0E00052686 /* CBuffMng.h */,
+				EC85D2BB1DFFCF0E00052686 /* CBuffTrace.cpp */,
+				EC85D2BC1DFFCF0E00052686 /* CBuffTrace.h */,
+				EC85D2BD1DFFCF0E00052686 /* CMsgMng.cpp */,
+				EC85D2BE1DFFCF0E00052686 /* CMsgMng.h */,
+				EC85D2BF1DFFCF0E00052686 /* CMutexLock.cpp */,
+				EC85D2C01DFFCF0E00052686 /* CMutexLock.h */,
+				EC85D2C11DFFCF0E00052686 /* CNodeList.cpp */,
+				EC85D2C21DFFCF0E00052686 /* CNodeList.h */,
+				EC85D2C31DFFCF0E00052686 /* CThreadSem.cpp */,
+				EC85D2C41DFFCF0E00052686 /* CThreadSem.h */,
+				EC85D2C51DFFCF0E00052686 /* CThreadWork.cpp */,
+				EC85D2C61DFFCF0E00052686 /* CThreadWork.h */,
+				EC85D2C71DFFCF0E00052686 /* readme.txt */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		EC85D2C81DFFCF0E00052686 /* codec */ = {
+			isa = PBXGroup;
+			children = (
+				EC85D4121DFFCF0F00052686 /* readme.txt */,
+			);
+			path = codec;
+			sourceTree = "<group>";
+		};
+		EC85D4131DFFCF0F00052686 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				EC85DB061DFFCF1200052686 /* readme.txt */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		EC85DB071DFFCF1200052686 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EC85DB081DFFCF1200052686 /* qcData.h */,
+				EC85DB091DFFCF1200052686 /* qcDef.h */,
+				EC85DB0A1DFFCF1200052686 /* qcErr.h */,
+				EC85DB0B1DFFCF1200052686 /* qcIO.h */,
+				EC85DB0C1DFFCF1200052686 /* qcMsg.h */,
+				EC85DB0D1DFFCF1200052686 /* qcParser.h */,
+				EC85DB0E1DFFCF1200052686 /* qcType.h */,
+				EC85DB0F1DFFCF1200052686 /* readme.txt */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EC85DB101DFFCF1200052686 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				EC85DB151DFFCF1200052686 /* http */,
+				EC85DB191DFFCF1200052686 /* rtmp */,
+				EC85DB171DFFCF1200052686 /* qcIO.cpp */,
+				EC85DB181DFFCF1200052686 /* readme.txt */,
+				EC85DB111DFFCF1200052686 /* CBaseIO.cpp */,
+				EC85DB121DFFCF1200052686 /* CBaseIO.h */,
+				EC85DB131DFFCF1200052686 /* CFileIO.cpp */,
+				EC85DB141DFFCF1200052686 /* CFileIO.h */,
+				EC85DF1B1E00D8AA00052686 /* CTcpIO.cpp */,
+				EC85DF1C1E00D8AA00052686 /* CTcpIO.h */,
+				EC85DF211E00F80D00052686 /* CUrl.cpp */,
+				EC85DF221E00F80D00052686 /* CUrl.h */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		EC85DB151DFFCF1200052686 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				EC85DB161DFFCF1200052686 /* readme.txt */,
+				ECE0CE611E019A7A004CEBD7 /* CHttpIO.cpp */,
+				ECE0CE621E019A7A004CEBD7 /* CHttpIO.h */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		EC85DB191DFFCF1200052686 /* rtmp */ = {
+			isa = PBXGroup;
+			children = (
+				EC85DB1A1DFFCF1200052686 /* readme.txt */,
+			);
+			path = rtmp;
+			sourceTree = "<group>";
+		};
+		EC85DB261DFFCF1200052686 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				EC85DB271DFFCF1200052686 /* CBaseParser.cpp */,
+				EC85DB281DFFCF1200052686 /* CBaseParser.h */,
+				EC85DB291DFFCF1200052686 /* flv */,
+				EC85DB2F1DFFCF1200052686 /* m3u8 */,
+				EC85DB311DFFCF1200052686 /* mp4 */,
+				EC85DB331DFFCF1200052686 /* qcParser.cpp */,
+				EC85DB341DFFCF1200052686 /* readme.txt */,
+				EC85DB351DFFCF1200052686 /* ts */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		EC85DB291DFFCF1200052686 /* flv */ = {
+			isa = PBXGroup;
+			children = (
+				EC85DB2A1DFFCF1200052686 /* CFLVParser.cpp */,
+				EC85DB2B1DFFCF1200052686 /* CFLVParser.h */,
+				EC85DB2C1DFFCF1200052686 /* CFLVTag.cpp */,
+				EC85DB2D1DFFCF1200052686 /* CFLVTag.h */,
+				EC85DB2E1DFFCF1200052686 /* readme.txt */,
+			);
+			path = flv;
+			sourceTree = "<group>";
+		};
+		EC85DB2F1DFFCF1200052686 /* m3u8 */ = {
+			isa = PBXGroup;
+			children = (
+				EC85DB301DFFCF1200052686 /* readme.txt */,
+			);
+			path = m3u8;
+			sourceTree = "<group>";
+		};
+		EC85DB311DFFCF1200052686 /* mp4 */ = {
+			isa = PBXGroup;
+			children = (
+				EC85DB321DFFCF1200052686 /* readme.txt */,
+			);
+			path = mp4;
+			sourceTree = "<group>";
+		};
+		EC85DB351DFFCF1200052686 /* ts */ = {
+			isa = PBXGroup;
+			children = (
+				EC85DB361DFFCF1200052686 /* readme.txt */,
+			);
+			path = ts;
+			sourceTree = "<group>";
+		};
+		EC85DB6F1DFFCF1200052686 /* sink */ = {
+			isa = PBXGroup;
+			children = (
+				EC85DB701DFFCF1200052686 /* readme.txt */,
+			);
+			path = sink;
+			sourceTree = "<group>";
+		};
+		EC85DB711DFFCF1200052686 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				EC85DB721DFFCF1200052686 /* readme.txt */,
+				EC85DB731DFFCF1200052686 /* UAVParser.cpp */,
+				EC85DB741DFFCF1200052686 /* UAVParser.h */,
+				EC85DB751DFFCF1200052686 /* UBuffTrace.cpp */,
+				EC85DB761DFFCF1200052686 /* UBuffTrace.h */,
+				EC85DB771DFFCF1200052686 /* UIntReader.cpp */,
+				EC85DB781DFFCF1200052686 /* UIntReader.h */,
+				EC85DB791DFFCF1200052686 /* ULibFunc.cpp */,
+				EC85DB7A1DFFCF1200052686 /* ULibFunc.h */,
+				EC85DB7B1DFFCF1200052686 /* ULogFunc.c */,
+				EC85DB7C1DFFCF1200052686 /* ULogFunc.h */,
+				EC85DB7D1DFFCF1200052686 /* UMsgMng.cpp */,
+				EC85DB7E1DFFCF1200052686 /* UMsgMng.h */,
+				EC85DB7F1DFFCF1200052686 /* USystemFunc.cpp */,
+				EC85DB801DFFCF1200052686 /* USystemFunc.h */,
+				EC85DB811DFFCF1200052686 /* UThreadFunc.cpp */,
+				EC85DB821DFFCF1200052686 /* UThreadFunc.h */,
+				EC85DF241E00F97600052686 /* USocket.cpp */,
+				EC85DF251E00F97600052686 /* USocket.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		ECE0CE861E028AAB004CEBD7 /* qplayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECE0CE8A1E028AAB004CEBD7 /* AppDelegate.h */,
+				ECE0CE8B1E028AAB004CEBD7 /* AppDelegate.m */,
+				ECE0CE8D1E028AAB004CEBD7 /* ViewController.h */,
+				ECE0CE8E1E028AAB004CEBD7 /* ViewController.mm */,
+				ECE0CE901E028AAB004CEBD7 /* Main.storyboard */,
+				ECE0CE931E028AAB004CEBD7 /* Assets.xcassets */,
+				ECE0CE951E028AAB004CEBD7 /* LaunchScreen.storyboard */,
+				ECE0CE981E028AAB004CEBD7 /* Info.plist */,
+				ECE0CE871E028AAB004CEBD7 /* Supporting Files */,
+			);
+			path = qplayerTests;
+			sourceTree = "<group>";
+		};
+		ECE0CE871E028AAB004CEBD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECE0CE881E028AAB004CEBD7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECE0CEA01E028AAB004CEBD7 /* qplayerTestsTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECE0CEA11E028AAB004CEBD7 /* qplayerTestsTests.m */,
+				ECE0CEA31E028AAB004CEBD7 /* Info.plist */,
+			);
+			path = qplayerTestsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC85D2A61DFFCEBA00052686 /* qplayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC85D2B01DFFCEBA00052686 /* Build configuration list for PBXNativeTarget "qplayer" */;
+			buildPhases = (
+				EC85D2A31DFFCEBA00052686 /* Sources */,
+				EC85D2A41DFFCEBA00052686 /* Frameworks */,
+				EC85D2A51DFFCEBA00052686 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qplayer;
+			productName = qplayer;
+			productReference = EC85D2A71DFFCEBA00052686 /* libqplayer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		ECE0CE841E028AAB004CEBD7 /* qplayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECE0CEA41E028AAB004CEBD7 /* Build configuration list for PBXNativeTarget "qplayerTests" */;
+			buildPhases = (
+				ECE0CE811E028AAB004CEBD7 /* Sources */,
+				ECE0CE821E028AAB004CEBD7 /* Frameworks */,
+				ECE0CE831E028AAB004CEBD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qplayerTests;
+			productName = qplayerTests;
+			productReference = ECE0CE851E028AAB004CEBD7 /* qplayerTests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECE0CE9C1E028AAB004CEBD7 /* qplayerTestsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECE0CEA71E028AAB004CEBD7 /* Build configuration list for PBXNativeTarget "qplayerTestsTests" */;
+			buildPhases = (
+				ECE0CE991E028AAB004CEBD7 /* Sources */,
+				ECE0CE9A1E028AAB004CEBD7 /* Frameworks */,
+				ECE0CE9B1E028AAB004CEBD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECE0CE9F1E028AAB004CEBD7 /* PBXTargetDependency */,
+			);
+			name = qplayerTestsTests;
+			productName = qplayerTestsTests;
+			productReference = ECE0CE9D1E028AAB004CEBD7 /* qplayerTestsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC85D29F1DFFCEBA00052686 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = pili;
+				TargetAttributes = {
+					EC85D2A61DFFCEBA00052686 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					ECE0CE841E028AAB004CEBD7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GDFHW66V92;
+					};
+					ECE0CE9C1E028AAB004CEBD7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = ECE0CE841E028AAB004CEBD7;
+					};
+				};
+			};
+			buildConfigurationList = EC85D2A21DFFCEBA00052686 /* Build configuration list for PBXProject "qplayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC85D29E1DFFCEBA00052686;
+			productRefGroup = EC85D2A81DFFCEBA00052686 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC85D2A61DFFCEBA00052686 /* qplayer */,
+				ECE0CE841E028AAB004CEBD7 /* qplayerTests */,
+				ECE0CE9C1E028AAB004CEBD7 /* qplayerTestsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECE0CE831E028AAB004CEBD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECE0CE971E028AAB004CEBD7 /* LaunchScreen.storyboard in Resources */,
+				ECE0CE941E028AAB004CEBD7 /* Assets.xcassets in Resources */,
+				ECE0CE921E028AAB004CEBD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE0CE9B1E028AAB004CEBD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC85D2A31DFFCEBA00052686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC85DB8B1DFFCF1200052686 /* CThreadWork.cpp in Sources */,
+				EC85DB871DFFCF1200052686 /* CMsgMng.cpp in Sources */,
+				EC85DEF71DFFCF1700052686 /* UMsgMng.cpp in Sources */,
+				EC85DB881DFFCF1200052686 /* CMutexLock.cpp in Sources */,
+				EC85DB8A1DFFCF1200052686 /* CThreadSem.cpp in Sources */,
+				EC85DEE31DFFCF1700052686 /* qcIO.cpp in Sources */,
+				EC85DEEA1DFFCF1700052686 /* CFLVTag.cpp in Sources */,
+				EC85DF231E00F80D00052686 /* CUrl.cpp in Sources */,
+				EC85DEF51DFFCF1700052686 /* ULibFunc.cpp in Sources */,
+				EC85DEEB1DFFCF1700052686 /* qcParser.cpp in Sources */,
+				ECE0CE631E019A7A004CEBD7 /* CHttpIO.cpp in Sources */,
+				EC85DF261E00F97600052686 /* USocket.cpp in Sources */,
+				EC85DEF81DFFCF1700052686 /* USystemFunc.cpp in Sources */,
+				EC85DF1D1E00D8AA00052686 /* CTcpIO.cpp in Sources */,
+				EC85DEE91DFFCF1700052686 /* CFLVParser.cpp in Sources */,
+				EC85DEF31DFFCF1700052686 /* UBuffTrace.cpp in Sources */,
+				EC85DB841DFFCF1200052686 /* CBitReader.cpp in Sources */,
+				EC85DB891DFFCF1200052686 /* CNodeList.cpp in Sources */,
+				EC85DB851DFFCF1200052686 /* CBuffMng.cpp in Sources */,
+				EC85DEF41DFFCF1700052686 /* UIntReader.cpp in Sources */,
+				EC85DEF91DFFCF1700052686 /* UThreadFunc.cpp in Sources */,
+				EC85D2AD1DFFCEBA00052686 /* qplayer.m in Sources */,
+				EC85DEF61DFFCF1700052686 /* ULogFunc.c in Sources */,
+				EC85DEF21DFFCF1700052686 /* UAVParser.cpp in Sources */,
+				EC85DEE21DFFCF1700052686 /* CFileIO.cpp in Sources */,
+				EC85DB861DFFCF1200052686 /* CBuffTrace.cpp in Sources */,
+				EC85DB831DFFCF1200052686 /* CBaseObject.cpp in Sources */,
+				EC85DEE81DFFCF1700052686 /* CBaseParser.cpp in Sources */,
+				EC85DEE11DFFCF1700052686 /* CBaseIO.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE0CE811E028AAB004CEBD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECE0CE8F1E028AAB004CEBD7 /* ViewController.mm in Sources */,
+				ECE0CE8C1E028AAB004CEBD7 /* AppDelegate.m in Sources */,
+				ECE0CE891E028AAB004CEBD7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE0CE991E028AAB004CEBD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECE0CEA21E028AAB004CEBD7 /* qplayerTestsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECE0CE9F1E028AAB004CEBD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECE0CE841E028AAB004CEBD7 /* qplayerTests */;
+			targetProxy = ECE0CE9E1E028AAB004CEBD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECE0CE901E028AAB004CEBD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECE0CE911E028AAB004CEBD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECE0CE951E028AAB004CEBD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECE0CE961E028AAB004CEBD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC85D2AE1DFFCEBA00052686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC85D2AF1DFFCEBA00052686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC85D2B11DFFCEBA00052686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					__QC_OS_IOS__,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EC85D2B21DFFCEBA00052686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = __QC_OS_IOS__;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		ECE0CEA51E028AAB004CEBD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				INFOPLIST_FILE = qplayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pili.qplayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECE0CEA61E028AAB004CEBD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				INFOPLIST_FILE = qplayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pili.qplayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECE0CEA81E028AAB004CEBD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = qplayerTestsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pili.qplayerTestsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qplayerTests.app/qplayerTests";
+			};
+			name = Debug;
+		};
+		ECE0CEA91E028AAB004CEBD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = qplayerTestsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pili.qplayerTestsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qplayerTests.app/qplayerTests";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC85D2A21DFFCEBA00052686 /* Build configuration list for PBXProject "qplayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC85D2AE1DFFCEBA00052686 /* Debug */,
+				EC85D2AF1DFFCEBA00052686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC85D2B01DFFCEBA00052686 /* Build configuration list for PBXNativeTarget "qplayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC85D2B11DFFCEBA00052686 /* Debug */,
+				EC85D2B21DFFCEBA00052686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECE0CEA41E028AAB004CEBD7 /* Build configuration list for PBXNativeTarget "qplayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECE0CEA51E028AAB004CEBD7 /* Debug */,
+				ECE0CEA61E028AAB004CEBD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECE0CEA71E028AAB004CEBD7 /* Build configuration list for PBXNativeTarget "qplayerTestsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECE0CEA81E028AAB004CEBD7 /* Debug */,
+				ECE0CEA91E028AAB004CEBD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC85D29F1DFFCEBA00052686 /* Project object */;
+}

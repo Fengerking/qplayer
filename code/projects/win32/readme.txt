@@ -1,0 +1,1 @@
+This folder contains win32 project files. 

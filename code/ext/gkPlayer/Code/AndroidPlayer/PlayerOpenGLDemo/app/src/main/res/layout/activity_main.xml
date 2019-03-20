@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:showDividers="beginning"
+    tools:context=".MainActivity" >
+    
+    <com.goku.media.player.VideoSurfaceView
+        android:id="@+id/VideoView"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"  
+    	android:layout_centerInParent="true" />
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_toRightOf="@+id/button1"
+        android:text="Pause" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:text="Stop" />
+        
+   <Button
+        android:id="@+id/buttonSeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_toRightOf="@+id/button3"
+        android:text="Seek" />
+
+    <Button
+        android:id="@+id/Render"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonSeek"
+        android:layout_alignBottom="@+id/buttonSeek"
+        android:layout_toRightOf="@+id/buttonSeek"
+        android:text="Render" />
+        
+    <View
+        android:id="@+id/touch_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button1"
+        android:layout_margin="@dimen/mv_progress_touch_area_margin"
+        android:background="@color/progress_touch_area"/>    
+
+</RelativeLayout>

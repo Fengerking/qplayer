@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ASCII"?>
+<!DOCTYPE PRJ SYSTEM "qplayer.dtd">
+<PRJ>
+  <Project_ID>
+    <Signature>UE Proj: v.1</Signature>
+  </Project_ID>
+  <Folder Name="mfw Files">
+    <Folder Name="dec Files">
+      <File>../../mfw/Common/CGKAudioDec.h</File>
+      <File>../../mfw/Common/CGKVideoDec.cpp</File>
+      <File>../../mfw/Common/CBaseAudioDec.h</File>
+      <File>../../mfw/Common/CGKVideoDec.h</File>
+      <File>../../mfw/Common/CBaseVideoDec.cpp</File>
+      <File>../../mfw/Common/CBaseVideoDec.h</File>
+      <File>../../mfw/Common/CGKAudioDec.cpp</File>
+      <File>../../mfw/Common/CBaseAudioDec.cpp</File>
+    </Folder>
+    <Folder Name="box Files">
+      <File>../../mfw/OMBox/CBoxMonitor.h</File>
+      <File>../../mfw/OMBox/CBoxBase.cpp</File>
+      <File>../../mfw/OMBox/COMBoxMng.h</File>
+      <File>../../mfw/OMBox/COMBoxMng.cpp</File>
+      <File>../../mfw/OMBox/CBoxVideoRnd.h</File>
+      <File>../../mfw/OMBox/CBoxAudioDec.cpp</File>
+      <File>../../mfw/OMBox/CBoxRender.cpp</File>
+      <File>../../mfw/OMBox/CBoxAudioDec.h</File>
+      <File>../../mfw/OMBox/CBoxAudioRnd.h</File>
+      <File>../../mfw/OMBox/CBoxVideoRnd.cpp</File>
+      <File>../../mfw/OMBox/CBoxSource.h</File>
+      <File>../../mfw/OMBox/CBoxSource.cpp</File>
+      <File>../../mfw/OMBox/CBoxAudioRnd.cpp</File>
+      <File>../../mfw/OMBox/CBoxVideoDec.h</File>
+      <File>../../mfw/OMBox/CBoxBase.h</File>
+      <File>../../mfw/OMBox/CBoxVideoDec.cpp</File>
+      <File>../../mfw/OMBox/CBoxMonitor.cpp</File>
+      <File>../../mfw/OMBox/CBoxRender.h</File>
+    </Folder>
+  </Folder>
+  <Folder Name="ndk Files">
+    <File>../../mfw/ndk/CNDKAudioRnd.cpp</File>
+    <File>../../mfw/ndk/jniPlayer.cpp</File>
+    <File>../../mfw/ndk/CNDKPlayer.cpp</File>
+    <File>../../mfw/ndk/CNDKAudioRnd.h</File>
+    <File>../../mfw/ndk/CNDKVideoRnd.h</File>
+    <File>../../mfw/ndk/CNDKVideoRnd.cpp</File>
+    <File>../../mfw/ndk/CNDKVDecRnd.h</File>
+    <File>../../mfw/ndk/CNDKVDecRnd.cpp</File>
+    <File>../../mfw/ndk/CNDKPlayer.h</File>
+  </Folder>
+  <Project_Information>
+    <Filter/>
+    <Include_Sub_Dir>1</Include_Sub_Dir>
+    <Relative_to_Project_File>1</Relative_to_Project_File>
+    <Word_File/>
+    <Use_Relative_Dir>1</Use_Relative_Dir>
+    <Tag_File/>
+    <Create_Tagfile>0</Create_Tagfile>
+    <CTags_Support>0</CTags_Support>
+    <Project_Directory>/Work/qplayer/code/projects/uedit</Project_Directory>
+  </Project_Information>
+  <Folder Name="inc Files">
+    <File>../../include/qcDef.h</File>
+    <File>../../include/qcData.h</File>
+    <File>../../include/qcParser.h</File>
+    <File>../../include/qcErr.h</File>
+    <File>../../include/qcPlayer.h</File>
+    <File>../../include/qcType.h</File>
+    <File>../../include/qcIO.h</File>
+    <File>../../include/qcMsg.h</File>
+  </Folder>
+</PRJ>

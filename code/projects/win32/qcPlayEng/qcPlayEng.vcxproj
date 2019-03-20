@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C59D8C25-F773-4E83-B96B-F5B29C8E1500}</ProjectGuid>
+    <RootNamespace>qcPlayEng</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;QCPLAYENG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\Include;..\..\..\Base;..\..\..\Util;..\..\..\drm\aes128;..\..\..\drm\normal_hls;..\..\..\IO;..\..\..\IO\http2;..\..\..\IO\rtmp;..\..\..\codec\gk\include;..\..\..\codec\gk\tStretch;..\..\..\codec\gk\audioRSMP;..\..\..\parser\AdaptiveStreamParser;..\..\..\parser\ba;..\..\..\parser\ts;..\..\..\mfw\common;..\..\..\mfw\OMBox;..\..\..\mfw\ndk;..\..\..\codec\gk\h264dec\compat\pthread\include;..\..\..\codec\openHEVC\Include;..\..\..\codec\speex\inc;..\..\..\anl;..\..\..\ext\win32\include;..\..\..\ext\OpenSSL\include;..\..\..\ext\libyuv\include;..\..\..\ext\aiTracking;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>B64_NO_NAMESPACE;WIN32;NDEBUG;_WINDOWS;_USRDLL;NO_CRYPTO;_RESAMPLE_SMALL_FILTER_;__QC_OS_WIN32__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4244;4068;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ddraw.lib;dxguid.lib;winmm.lib;Ws2_32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\win32\QPlayEng.Dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\ext\win32\ddraw;..\..\..\codec\gk\h264dec\compat\pthread\lib\x86;..\..\..\ext\Rtsp\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>qcPlayEng.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="qcPlayEng.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\anl\CAnalBase.cpp" />
+    <ClCompile Include="..\..\..\anl\CAnalDataSender.cpp" />
+    <ClCompile Include="..\..\..\anl\CAnalPili.cpp" />
+    <ClCompile Include="..\..\..\anl\CAnalysisMng.cpp" />
+    <ClCompile Include="..\..\..\base\CBaseObject.cpp" />
+    <ClCompile Include="..\..\..\base\CBaseSetting.cpp" />
+    <ClCompile Include="..\..\..\base\CBitReader.cpp" />
+    <ClCompile Include="..\..\..\base\CBuffMng.cpp" />
+    <ClCompile Include="..\..\..\base\CBuffTrace.cpp" />
+    <ClCompile Include="..\..\..\base\CIOReader.cpp" />
+    <ClCompile Include="..\..\..\base\CMemFile.cpp" />
+    <ClCompile Include="..\..\..\base\CMsgMng.cpp" />
+    <ClCompile Include="..\..\..\base\CMutexLock.cpp" />
+    <ClCompile Include="..\..\..\base\CNodeList.cpp" />
+    <ClCompile Include="..\..\..\base\CThreadSem.cpp" />
+    <ClCompile Include="..\..\..\base\CThreadWork.cpp" />
+    <ClCompile Include="..\..\..\codec\gk\audioRSMP\aflibConverter.cpp" />
+    <ClCompile Include="..\..\..\codec\gk\ColorConv\clconv.c" />
+    <ClCompile Include="..\..\..\codec\gk\tStretch\TDStretch.cpp" />
+    <ClCompile Include="..\..\..\drm\aes128\aes-internal-dec.c" />
+    <ClCompile Include="..\..\..\drm\aes128\aes-internal.c" />
+    <ClCompile Include="..\..\..\drm\aes128\AES_CBC.cpp" />
+    <ClCompile Include="..\..\..\drm\normal_hls\CNormalHLSDrm.cpp" />
+    <ClCompile Include="..\..\..\ext\aiTracking\cJSON.c" />
+    <ClCompile Include="..\..\..\ext\aiTracking\CTrackMng.cpp" />
+    <ClCompile Include="..\..\..\ext\aiTracking\YUVDrawBox.cpp" />
+    <ClCompile Include="..\..\..\io\CBaseIO.cpp" />
+    <ClCompile Include="..\..\..\io\CDNSLookUp.cpp" />
+    <ClCompile Include="..\..\..\io\CExtIO.cpp" />
+    <ClCompile Include="..\..\..\io\CFileIO.cpp" />
+    <ClCompile Include="..\..\..\io\CQCLibIO.cpp" />
+    <ClCompile Include="..\..\..\io\http2\CDNSCache.cpp" />
+    <ClCompile Include="..\..\..\io\http2\CHTTPClient.cpp" />
+    <ClCompile Include="..\..\..\io\http2\CHTTPIO2.cpp" />
+    <ClCompile Include="..\..\..\io\http2\COpenSSL.cpp" />
+    <ClCompile Include="..\..\..\io\http2\CPDData.cpp" />
+    <ClCompile Include="..\..\..\io\http2\CPDFileIO.cpp" />
+    <ClCompile Include="..\..\..\io\qcIO.cpp" />
+    <ClCompile Include="..\..\..\io\rtmp\amf.c" />
+    <ClCompile Include="..\..\..\io\rtmp\CRTMPIO.cpp" />
+    <ClCompile Include="..\..\..\io\rtmp\hashswf.c" />
+    <ClCompile Include="..\..\..\io\rtmp\log.c" />
+    <ClCompile Include="..\..\..\io\rtmp\parseurl.c" />
+    <ClCompile Include="..\..\..\io\rtmp\rtmp.c" />
+    <ClCompile Include="..\..\..\mfw\Common\CBaseAudioDec.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CBaseAudioRnd.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CBaseClock.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CBaseSource.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CBaseVideoDec.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CBaseVideoRnd.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CDDrawRnd.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CExtAVSource.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CExtIOSource.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CGDIRnd.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CQCAdpcmDec.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CQCAudioDec.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CQCFFConcat.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CQCFFSource.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CQCMuxer.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CQCSource.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CQCSpeexDec.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CQCVDecRnd.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CQCVideoDec.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CQCVideoEnc.cpp" />
+    <ClCompile Include="..\..\..\mfw\Common\CWaveOutRnd.cpp" />
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxAudioDec.cpp" />
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxAudioRnd.cpp" />
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxBase.cpp" />
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxMonitor.cpp" />
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxRender.cpp" />
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxSource.cpp" />
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxVDecRnd.cpp" />
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxVideoDec.cpp" />
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxVideoRnd.cpp" />
+    <ClCompile Include="..\..\..\mfw\OMBox\COMBoxMng.cpp" />
+    <ClCompile Include="..\..\..\mfw\qcPlayerEng.cpp" />
+    <ClCompile Include="..\..\..\parser\AdaptiveStreamParser\CDataBox.cpp" />
+    <ClCompile Include="..\..\..\parser\ba\CAdaptiveStreamBA.cpp" />
+    <ClCompile Include="..\..\..\parser\CBaseParser.cpp" />
+    <ClCompile Include="..\..\..\parser\flv\CFLVParser.cpp" />
+    <ClCompile Include="..\..\..\parser\flv\CFLVTag.cpp" />
+    <ClCompile Include="..\..\..\parser\m3u8\CAdaptiveStreamHLS.cpp" />
+    <ClCompile Include="..\..\..\parser\m3u8\CHls_entity.cpp" />
+    <ClCompile Include="..\..\..\parser\m3u8\CHls_manager.cpp" />
+    <ClCompile Include="..\..\..\parser\m3u8\CHls_parser.cpp" />
+    <ClCompile Include="..\..\..\parser\mp4\CMP4Parser.cpp" />
+    <ClCompile Include="..\..\..\parser\mp4\CMP4ParserBase.cpp" />
+    <ClCompile Include="..\..\..\parser\mp4\CMP4ParserFrag.cpp" />
+    <ClCompile Include="..\..\..\parser\mp4\CMP4ParserMoov.cpp" />
+    <ClCompile Include="..\..\..\parser\qcParser.cpp" />
+    <ClCompile Include="..\..\..\parser\rtsp\b64.c" />
+    <ClCompile Include="..\..\..\parser\rtsp\CRtspParser.cpp" />
+    <ClCompile Include="..\..\..\parser\rtsp\CRtspParserWrapper.cpp" />
+    <ClCompile Include="..\..\..\parser\rtsp\hex_coding.c" />
+    <ClCompile Include="..\..\..\parser\ts\CADTSFrameSpliter.cpp" />
+    <ClCompile Include="..\..\..\parser\ts\CCheckTimestampCache.cpp" />
+    <ClCompile Include="..\..\..\parser\ts\CFrameSpliter.cpp" />
+    <ClCompile Include="..\..\..\parser\ts\CH2645FrameSpliter.cpp" />
+    <ClCompile Include="..\..\..\parser\ts\CTSParser.cpp" />
+    <ClCompile Include="..\..\..\parser\ts\tsbase.cpp" />
+    <ClCompile Include="..\..\..\parser\ts\tsparser.cpp" />
+    <ClCompile Include="..\..\..\util\UAVFormatFunc.cpp" />
+    <ClCompile Include="..\..\..\util\UAVParser.cpp" />
+    <ClCompile Include="..\..\..\util\UBuffTrace.cpp" />
+    <ClCompile Include="..\..\..\util\UFileFunc.cpp" />
+    <ClCompile Include="..\..\..\util\UIntReader.cpp" />
+    <ClCompile Include="..\..\..\util\ULibFunc.cpp" />
+    <ClCompile Include="..\..\..\util\ULogFunc.c" />
+    <ClCompile Include="..\..\..\util\UMsgMng.cpp" />
+    <ClCompile Include="..\..\..\util\USocketFunc.cpp" />
+    <ClCompile Include="..\..\..\util\USourceFormat.cpp" />
+    <ClCompile Include="..\..\..\util\USystemFunc.cpp" />
+    <ClCompile Include="..\..\..\util\UThreadFunc.cpp" />
+    <ClCompile Include="..\..\..\util\UUrlParser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\anl\CAnalBase.h" />
+    <ClInclude Include="..\..\..\anl\CAnalDataSender.h" />
+    <ClInclude Include="..\..\..\anl\CAnalPili.h" />
+    <ClInclude Include="..\..\..\anl\CAnalysisMng.h" />
+    <ClInclude Include="..\..\..\base\CBaseObject.h" />
+    <ClInclude Include="..\..\..\base\CBaseSetting.h" />
+    <ClInclude Include="..\..\..\base\CBitReader.h" />
+    <ClInclude Include="..\..\..\base\CBuffMng.h" />
+    <ClInclude Include="..\..\..\base\CBuffTrace.h" />
+    <ClInclude Include="..\..\..\base\CIOReader.h" />
+    <ClInclude Include="..\..\..\base\CMemFile.h" />
+    <ClInclude Include="..\..\..\base\CMsgMng.h" />
+    <ClInclude Include="..\..\..\base\CMutexLock.h" />
+    <ClInclude Include="..\..\..\base\CNodeList.h" />
+    <ClInclude Include="..\..\..\base\CThreadSem.h" />
+    <ClInclude Include="..\..\..\base\CThreadWork.h" />
+    <ClInclude Include="..\..\..\codec\gk\audioRSMP\aflibconverter.h" />
+    <ClInclude Include="..\..\..\codec\gk\audioRSMP\aflibConverterLargeFilter.h" />
+    <ClInclude Include="..\..\..\codec\gk\audioRSMP\aflibConverterSmallFilter.h" />
+    <ClInclude Include="..\..\..\codec\gk\tStretch\TDStretch.h" />
+    <ClInclude Include="..\..\..\drm\aes128\aes.h" />
+    <ClInclude Include="..\..\..\drm\aes128\AES_CBC.h" />
+    <ClInclude Include="..\..\..\drm\aes128\aes_i.h" />
+    <ClInclude Include="..\..\..\drm\normal_hls\CNormalHLSDrm.h" />
+    <ClInclude Include="..\..\..\ext\aiTracking\cJSON.h" />
+    <ClInclude Include="..\..\..\ext\aiTracking\CTrackMng.h" />
+    <ClInclude Include="..\..\..\ext\aiTracking\YUVDrawBox.h" />
+    <ClInclude Include="..\..\..\include\qcCodec.h" />
+    <ClInclude Include="..\..\..\include\qcData.h" />
+    <ClInclude Include="..\..\..\include\qcDef.h" />
+    <ClInclude Include="..\..\..\include\qcErr.h" />
+    <ClInclude Include="..\..\..\include\qcIO.h" />
+    <ClInclude Include="..\..\..\include\qcMsg.h" />
+    <ClInclude Include="..\..\..\include\qcParser.h" />
+    <ClInclude Include="..\..\..\include\qcPlayer.h" />
+    <ClInclude Include="..\..\..\include\qcType.h" />
+    <ClInclude Include="..\..\..\io\CBaseIO.h" />
+    <ClInclude Include="..\..\..\io\CDNSLookUp.h" />
+    <ClInclude Include="..\..\..\io\CExtIO.h" />
+    <ClInclude Include="..\..\..\io\CFileIO.h" />
+    <ClInclude Include="..\..\..\io\CQCLibIO.h" />
+    <ClInclude Include="..\..\..\io\http2\CDNSCache.h" />
+    <ClInclude Include="..\..\..\io\http2\CHTTPClient.h" />
+    <ClInclude Include="..\..\..\io\http2\CHTTPIO2.h" />
+    <ClInclude Include="..\..\..\io\http2\COpenSSL.h" />
+    <ClInclude Include="..\..\..\io\http2\CPDData.h" />
+    <ClInclude Include="..\..\..\io\http2\CPDFileIO.h" />
+    <ClInclude Include="..\..\..\io\rtmp\amf.h" />
+    <ClInclude Include="..\..\..\io\rtmp\bytes.h" />
+    <ClInclude Include="..\..\..\io\rtmp\CRTMPIO.h" />
+    <ClInclude Include="..\..\..\io\rtmp\handshake.h" />
+    <ClInclude Include="..\..\..\io\rtmp\http.h" />
+    <ClInclude Include="..\..\..\io\rtmp\log.h" />
+    <ClInclude Include="..\..\..\io\rtmp\rtmp.h" />
+    <ClInclude Include="..\..\..\io\rtmp\rtmp_sys.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CBaseAudioDec.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CBaseAudioRnd.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CBaseClock.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CBaseSource.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CBaseVideoDec.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CBaseVideoRnd.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CDDrawRnd.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CExtAVSource.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CExtIOSource.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CGDIRnd.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CQCAdpcmDec.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CQCAudioDec.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CQCFFConcat.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CQCFFSource.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CQCMuxer.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CQCSource.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CQCSpeexDec.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CQCVDecRnd.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CQCVideoDec.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CQCVideoEnc.h" />
+    <ClInclude Include="..\..\..\mfw\Common\CWaveOutRnd.h" />
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxAudioDec.h" />
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxAudioRnd.h" />
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxBase.h" />
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxMonitor.h" />
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxRender.h" />
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxSource.h" />
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxVDecRnd.h" />
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxVideoDec.h" />
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxVideoRnd.h" />
+    <ClInclude Include="..\..\..\mfw\OMBox\COMBoxMng.h" />
+    <ClInclude Include="..\..\..\parser\AdaptiveStreamParser\AdaptiveStreamParser.h" />
+    <ClInclude Include="..\..\..\parser\AdaptiveStreamParser\CDataBox.h" />
+    <ClInclude Include="..\..\..\parser\AdaptiveStreamParser\HLSDRM.h" />
+    <ClInclude Include="..\..\..\parser\ba\CAdaptiveStreamBA.h" />
+    <ClInclude Include="..\..\..\parser\CBaseParser.h" />
+    <ClInclude Include="..\..\..\parser\flv\CFLVParser.h" />
+    <ClInclude Include="..\..\..\parser\flv\CFLVTag.h" />
+    <ClInclude Include="..\..\..\parser\m3u8\CAdaptiveStreamHLS.h" />
+    <ClInclude Include="..\..\..\parser\m3u8\CHls_entity.h" />
+    <ClInclude Include="..\..\..\parser\m3u8\CHls_manager.h" />
+    <ClInclude Include="..\..\..\parser\m3u8\CHls_parser.h" />
+    <ClInclude Include="..\..\..\parser\mp4\CMP4Parser.h" />
+    <ClInclude Include="..\..\..\parser\rtsp\b64.h" />
+    <ClInclude Include="..\..\..\parser\rtsp\common_def.h" />
+    <ClInclude Include="..\..\..\parser\rtsp\CRtspParser.h" />
+    <ClInclude Include="..\..\..\parser\rtsp\CRtspParserWrapper.h" />
+    <ClInclude Include="..\..\..\parser\rtsp\hex_coding.h" />
+    <ClInclude Include="..\..\..\parser\rtsp\RtspClientAPI.h" />
+    <ClInclude Include="..\..\..\parser\ts\bit_t.h" />
+    <ClInclude Include="..\..\..\parser\ts\CADTSFrameSpliter.h" />
+    <ClInclude Include="..\..\..\parser\ts\CCheckTimestampCache.h" />
+    <ClInclude Include="..\..\..\parser\ts\CFrameSpliter.h" />
+    <ClInclude Include="..\..\..\parser\ts\CH2645FrameSpliter.h" />
+    <ClInclude Include="..\..\..\parser\ts\cmbasetype.h" />
+    <ClInclude Include="..\..\..\parser\ts\CTSParser.h" />
+    <ClInclude Include="..\..\..\parser\ts\tsbase.h" />
+    <ClInclude Include="..\..\..\parser\ts\tsparser.h" />
+    <ClInclude Include="..\..\..\util\UAVFormatFunc.h" />
+    <ClInclude Include="..\..\..\util\UAVParser.h" />
+    <ClInclude Include="..\..\..\util\UBuffTrace.h" />
+    <ClInclude Include="..\..\..\util\UFileFunc.h" />
+    <ClInclude Include="..\..\..\util\UIntReader.h" />
+    <ClInclude Include="..\..\..\util\ULibFunc.h" />
+    <ClInclude Include="..\..\..\util\ULogFunc.h" />
+    <ClInclude Include="..\..\..\util\UMsgMng.h" />
+    <ClInclude Include="..\..\..\util\USocketFunc.h" />
+    <ClInclude Include="..\..\..\util\USourceFormat.h" />
+    <ClInclude Include="..\..\..\util\USystemFunc.h" />
+    <ClInclude Include="..\..\..\util\UThreadFunc.h" />
+    <ClInclude Include="..\..\..\util\UUrlParser.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="qcPlayEng.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\io\rtmp\readme.txt" />
+    <Text Include="..\..\..\parser\ts\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

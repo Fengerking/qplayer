@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27AE19541E4CAA2E0074CDD1 /* ttOpt.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A7B1E33ABC70018DFA1 /* ttOpt.c */; };
+		27AE19551E4CAA2E0074CDD1 /* ttH264idctNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD21E33AD450018DFA1 /* ttH264idctNeon.S */; };
+		27AE19561E4CAA2E0074CDD1 /* ttAvpacket.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A521E33ABC70018DFA1 /* ttAvpacket.c */; };
+		27AE19571E4CAA2E0074CDD1 /* ttH264Refs.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A721E33ABC70018DFA1 /* ttH264Refs.c */; };
+		27AE19581E4CAA2E0074CDD1 /* ttH264predNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD41E33AD450018DFA1 /* ttH264predNeon.S */; };
+		27AE19591E4CAA2E0074CDD1 /* ttHpeldspNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD71E33AD450018DFA1 /* ttHpeldspNeon.S */; };
+		27AE195A1E4CAA2E0074CDD1 /* ttH264qpelInitArm.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD51E33AD450018DFA1 /* ttH264qpelInitArm.c */; };
+		27AE195B1E4CAA2E0074CDD1 /* ttH264qpelNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD61E33AD450018DFA1 /* ttH264qpelNeon.S */; };
+		27AE195C1E4CAA2E0074CDD1 /* ttIntmath.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A771E33ABC70018DFA1 /* ttIntmath.c */; };
+		27AE195D1E4CAA2E0074CDD1 /* ttOptions.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A7C1E33ABC70018DFA1 /* ttOptions.c */; };
+		27AE195E1E4CAA2E0074CDD1 /* ttRational.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A831E33ABC70018DFA1 /* ttRational.c */; };
+		27AE195F1E4CAA2E0074CDD1 /* ttMem.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A7A1E33ABC70018DFA1 /* ttMem.c */; };
+		27AE19601E4CAA2E0074CDD1 /* ttH264Sei.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A731E33ABC70018DFA1 /* ttH264Sei.c */; };
+		27AE19611E4CAA2E0074CDD1 /* ttUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A841E33ABC70018DFA1 /* ttUtils.c */; };
+		27AE19621E4CAA2E0074CDD1 /* ttH264dspNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD11E33AD450018DFA1 /* ttH264dspNeon.S */; };
+		27AE19631E4CAA2E0074CDD1 /* ttDisplay.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A591E33ABC70018DFA1 /* ttDisplay.c */; };
+		27AE19641E4CAA2E0074CDD1 /* ttH264Slice.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A741E33ABC70018DFA1 /* ttH264Slice.c */; };
+		27AE19651E4CAA2E0074CDD1 /* cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AC11E33AD450018DFA1 /* cpu.c */; };
+		27AE19661E4CAA2E0074CDD1 /* ttPthreadFrame.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A801E33ABC70018DFA1 /* ttPthreadFrame.c */; };
+		27AE19671E4CAA2E0074CDD1 /* ttImgutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A761E33ABC70018DFA1 /* ttImgutils.c */; };
+		27AE19681E4CAA2E0074CDD1 /* ttVideodspInitArm.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98ADC1E33AD450018DFA1 /* ttVideodspInitArm.c */; };
+		27AE19691E4CAA2E0074CDD1 /* ttVideodspInitArmv5te.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98ADD1E33AD450018DFA1 /* ttVideodspInitArmv5te.c */; };
+		27AE196A1E4CAA2E0074CDD1 /* ttH264idct.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A661E33ABC70018DFA1 /* ttH264idct.c */; };
+		27AE196B1E4CAA2E0074CDD1 /* ttBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A551E33ABC70018DFA1 /* ttBuffer.c */; };
+		27AE196C1E4CAA2E0074CDD1 /* ttH264Mb.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A691E33ABC70018DFA1 /* ttH264Mb.c */; };
+		27AE196D1E4CAA2E0074CDD1 /* ttH264Cavlc.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A601E33ABC70018DFA1 /* ttH264Cavlc.c */; };
+		27AE196E1E4CAA2E0074CDD1 /* ttH264Cabac.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A5F1E33ABC70018DFA1 /* ttH264Cabac.c */; };
+		27AE196F1E4CAA2E0074CDD1 /* ttBlockdspNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98ACA1E33AD450018DFA1 /* ttBlockdspNeon.S */; };
+		27AE19701E4CAA2E0074CDD1 /* ttH264cmcNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98ACE1E33AD450018DFA1 /* ttH264cmcNeon.S */; };
+		27AE19711E4CAA2E0074CDD1 /* ttMathTables.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A791E33ABC70018DFA1 /* ttMathTables.c */; };
+		27AE19721E4CAA2E0074CDD1 /* ttH264chromaInitArm.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98ACD1E33AD450018DFA1 /* ttH264chromaInitArm.c */; };
+		27AE19731E4CAA2E0074CDD1 /* ttH264Loopfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A681E33ABC70018DFA1 /* ttH264Loopfilter.c */; };
+		27AE19741E4CAA2E0074CDD1 /* ttH264chroma.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A611E33ABC70018DFA1 /* ttH264chroma.c */; };
+		27AE19751E4CAA2E0074CDD1 /* ttVideoDec.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AF41E33AD820018DFA1 /* ttVideoDec.c */; };
+		27AE19761E4CAA2E0074CDD1 /* ttH264Picture.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A6C1E33ABC70018DFA1 /* ttH264Picture.c */; };
+		27AE19771E4CAA2E0074CDD1 /* ttCabac.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A561E33ABC70018DFA1 /* ttCabac.c */; };
+		27AE19781E4CAA2E0074CDD1 /* ttPthreadSlice.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A811E33ABC70018DFA1 /* ttPthreadSlice.c */; };
+		27AE19791E4CAA2E0074CDD1 /* ttBitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A541E33ABC70018DFA1 /* ttBitstream.c */; };
+		27AE197A1E4CAA2E0074CDD1 /* ttAtomic.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A511E33ABC70018DFA1 /* ttAtomic.c */; };
+		27AE197B1E4CAA2E0074CDD1 /* neon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AC51E33AD450018DFA1 /* neon.S */; };
+		27AE197C1E4CAA2E0074CDD1 /* ttH264predInitArm.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD31E33AD450018DFA1 /* ttH264predInitArm.c */; };
+		27AE197D1E4CAA2E0074CDD1 /* ttPthread.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A7F1E33ABC70018DFA1 /* ttPthread.c */; };
+		27AE197E1E4CAA2E0074CDD1 /* ttH264dspInitArm.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD01E33AD450018DFA1 /* ttH264dspInitArm.c */; };
+		27AE197F1E4CAA2E0074CDD1 /* ttVideodsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A851E33ABC70018DFA1 /* ttVideodsp.c */; };
+		27AE19801E4CAA2E0074CDD1 /* ttDict.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A581E33ABC70018DFA1 /* ttDict.c */; };
+		27AE19811E4CAA2E0074CDD1 /* ttH264pred.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A6D1E33ABC70018DFA1 /* ttH264pred.c */; };
+		27AE19821E4CAA2E0074CDD1 /* ttH264dsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A641E33ABC70018DFA1 /* ttH264dsp.c */; };
+		27AE19831E4CAA2E0074CDD1 /* ttErrorResilience.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A5A1E33ABC70018DFA1 /* ttErrorResilience.c */; };
+		27AE19841E4CAA2E0074CDD1 /* ttH264.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A5D1E33ABC70018DFA1 /* ttH264.c */; };
+		27AE19851E4CAA2E0074CDD1 /* ttH264Ps.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A6F1E33ABC70018DFA1 /* ttH264Ps.c */; };
+		27AE19861E4CAA2E0074CDD1 /* ttH264Direct.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A631E33ABC70018DFA1 /* ttH264Direct.c */; };
+		27AE19871E4CAA2E0074CDD1 /* ttFrame.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A5B1E33ABC70018DFA1 /* ttFrame.c */; };
+		27AE19881E4CAA2E0074CDD1 /* asm.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AC01E33AD450018DFA1 /* asm.S */; };
+		27AE19891E4CAA2E0074CDD1 /* ttMathematics.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A781E33ABC70018DFA1 /* ttMathematics.c */; };
+		27AE198A1E4CAA2E0074CDD1 /* ttVideodspArmv5te.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98ADB1E33AD450018DFA1 /* ttVideodspArmv5te.S */; };
+		27AE198B1E4CAA2E0074CDD1 /* ttH264qpel.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A701E33ABC70018DFA1 /* ttH264qpel.c */; };
+		27AE198C1E4CAA2E0074CDD1 /* ttCpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A571E33ABC70018DFA1 /* ttCpu.c */; };
+		27AE198D1E4CAA2E0074CDD1 /* ttPixdesc.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A7E1E33ABC70018DFA1 /* ttPixdesc.c */; };
+		27AE198E1E4CAA2E0074CDD1 /* ttGolomb.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A5C1E33ABC70018DFA1 /* ttGolomb.c */; };
+		27C98A871E33ABC70018DFA1 /* ttAtomic.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A511E33ABC70018DFA1 /* ttAtomic.c */; };
+		27C98A881E33ABC70018DFA1 /* ttAvpacket.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A521E33ABC70018DFA1 /* ttAvpacket.c */; };
+		27C98A8A1E33ABC70018DFA1 /* ttBitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A541E33ABC70018DFA1 /* ttBitstream.c */; };
+		27C98A8B1E33ABC70018DFA1 /* ttBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A551E33ABC70018DFA1 /* ttBuffer.c */; };
+		27C98A8C1E33ABC70018DFA1 /* ttCabac.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A561E33ABC70018DFA1 /* ttCabac.c */; };
+		27C98A8D1E33ABC70018DFA1 /* ttCpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A571E33ABC70018DFA1 /* ttCpu.c */; };
+		27C98A8E1E33ABC70018DFA1 /* ttDict.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A581E33ABC70018DFA1 /* ttDict.c */; };
+		27C98A8F1E33ABC70018DFA1 /* ttDisplay.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A591E33ABC70018DFA1 /* ttDisplay.c */; };
+		27C98A901E33ABC70018DFA1 /* ttErrorResilience.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A5A1E33ABC70018DFA1 /* ttErrorResilience.c */; };
+		27C98A911E33ABC70018DFA1 /* ttFrame.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A5B1E33ABC70018DFA1 /* ttFrame.c */; };
+		27C98A921E33ABC70018DFA1 /* ttGolomb.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A5C1E33ABC70018DFA1 /* ttGolomb.c */; };
+		27C98A931E33ABC70018DFA1 /* ttH264.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A5D1E33ABC70018DFA1 /* ttH264.c */; };
+		27C98A951E33ABC70018DFA1 /* ttH264Cabac.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A5F1E33ABC70018DFA1 /* ttH264Cabac.c */; };
+		27C98A961E33ABC70018DFA1 /* ttH264Cavlc.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A601E33ABC70018DFA1 /* ttH264Cavlc.c */; };
+		27C98A971E33ABC70018DFA1 /* ttH264chroma.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A611E33ABC70018DFA1 /* ttH264chroma.c */; };
+		27C98A991E33ABC70018DFA1 /* ttH264Direct.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A631E33ABC70018DFA1 /* ttH264Direct.c */; };
+		27C98A9A1E33ABC70018DFA1 /* ttH264dsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A641E33ABC70018DFA1 /* ttH264dsp.c */; };
+		27C98A9C1E33ABC70018DFA1 /* ttH264idct.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A661E33ABC70018DFA1 /* ttH264idct.c */; };
+		27C98A9E1E33ABC70018DFA1 /* ttH264Loopfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A681E33ABC70018DFA1 /* ttH264Loopfilter.c */; };
+		27C98A9F1E33ABC70018DFA1 /* ttH264Mb.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A691E33ABC70018DFA1 /* ttH264Mb.c */; };
+		27C98AA21E33ABC70018DFA1 /* ttH264Picture.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A6C1E33ABC70018DFA1 /* ttH264Picture.c */; };
+		27C98AA31E33ABC70018DFA1 /* ttH264pred.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A6D1E33ABC70018DFA1 /* ttH264pred.c */; };
+		27C98AA51E33ABC70018DFA1 /* ttH264Ps.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A6F1E33ABC70018DFA1 /* ttH264Ps.c */; };
+		27C98AA61E33ABC70018DFA1 /* ttH264qpel.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A701E33ABC70018DFA1 /* ttH264qpel.c */; };
+		27C98AA81E33ABC70018DFA1 /* ttH264Refs.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A721E33ABC70018DFA1 /* ttH264Refs.c */; };
+		27C98AA91E33ABC70018DFA1 /* ttH264Sei.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A731E33ABC70018DFA1 /* ttH264Sei.c */; };
+		27C98AAA1E33ABC70018DFA1 /* ttH264Slice.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A741E33ABC70018DFA1 /* ttH264Slice.c */; };
+		27C98AAC1E33ABC70018DFA1 /* ttImgutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A761E33ABC70018DFA1 /* ttImgutils.c */; };
+		27C98AAD1E33ABC70018DFA1 /* ttIntmath.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A771E33ABC70018DFA1 /* ttIntmath.c */; };
+		27C98AAE1E33ABC70018DFA1 /* ttMathematics.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A781E33ABC70018DFA1 /* ttMathematics.c */; };
+		27C98AAF1E33ABC70018DFA1 /* ttMathTables.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A791E33ABC70018DFA1 /* ttMathTables.c */; };
+		27C98AB01E33ABC70018DFA1 /* ttMem.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A7A1E33ABC70018DFA1 /* ttMem.c */; };
+		27C98AB11E33ABC70018DFA1 /* ttOpt.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A7B1E33ABC70018DFA1 /* ttOpt.c */; };
+		27C98AB21E33ABC70018DFA1 /* ttOptions.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A7C1E33ABC70018DFA1 /* ttOptions.c */; };
+		27C98AB41E33ABC70018DFA1 /* ttPixdesc.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A7E1E33ABC70018DFA1 /* ttPixdesc.c */; };
+		27C98AB51E33ABC70018DFA1 /* ttPthread.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A7F1E33ABC70018DFA1 /* ttPthread.c */; };
+		27C98AB61E33ABC70018DFA1 /* ttPthreadFrame.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A801E33ABC70018DFA1 /* ttPthreadFrame.c */; };
+		27C98AB71E33ABC70018DFA1 /* ttPthreadSlice.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A811E33ABC70018DFA1 /* ttPthreadSlice.c */; };
+		27C98AB91E33ABC70018DFA1 /* ttRational.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A831E33ABC70018DFA1 /* ttRational.c */; };
+		27C98ABA1E33ABC70018DFA1 /* ttUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A841E33ABC70018DFA1 /* ttUtils.c */; };
+		27C98ABB1E33ABC70018DFA1 /* ttVideodsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98A851E33ABC70018DFA1 /* ttVideodsp.c */; };
+		27C98ADE1E33AD450018DFA1 /* asm.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AC01E33AD450018DFA1 /* asm.S */; };
+		27C98ADF1E33AD450018DFA1 /* cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AC11E33AD450018DFA1 /* cpu.c */; };
+		27C98AE11E33AD450018DFA1 /* neon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AC51E33AD450018DFA1 /* neon.S */; };
+		27C98AE41E33AD450018DFA1 /* ttBlockdspNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98ACA1E33AD450018DFA1 /* ttBlockdspNeon.S */; };
+		27C98AE51E33AD450018DFA1 /* ttH264chromaInitArm.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98ACD1E33AD450018DFA1 /* ttH264chromaInitArm.c */; };
+		27C98AE61E33AD450018DFA1 /* ttH264cmcNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98ACE1E33AD450018DFA1 /* ttH264cmcNeon.S */; };
+		27C98AE71E33AD450018DFA1 /* ttH264dspInitArm.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD01E33AD450018DFA1 /* ttH264dspInitArm.c */; };
+		27C98AE81E33AD450018DFA1 /* ttH264dspNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD11E33AD450018DFA1 /* ttH264dspNeon.S */; };
+		27C98AE91E33AD450018DFA1 /* ttH264idctNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD21E33AD450018DFA1 /* ttH264idctNeon.S */; };
+		27C98AEA1E33AD450018DFA1 /* ttH264predInitArm.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD31E33AD450018DFA1 /* ttH264predInitArm.c */; };
+		27C98AEB1E33AD450018DFA1 /* ttH264predNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD41E33AD450018DFA1 /* ttH264predNeon.S */; };
+		27C98AEC1E33AD450018DFA1 /* ttH264qpelInitArm.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD51E33AD450018DFA1 /* ttH264qpelInitArm.c */; };
+		27C98AED1E33AD450018DFA1 /* ttH264qpelNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD61E33AD450018DFA1 /* ttH264qpelNeon.S */; };
+		27C98AEE1E33AD450018DFA1 /* ttHpeldspNeon.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AD71E33AD450018DFA1 /* ttHpeldspNeon.S */; };
+		27C98AEF1E33AD450018DFA1 /* ttVideodspArmv5te.S in Sources */ = {isa = PBXBuildFile; fileRef = 27C98ADB1E33AD450018DFA1 /* ttVideodspArmv5te.S */; };
+		27C98AF01E33AD450018DFA1 /* ttVideodspInitArm.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98ADC1E33AD450018DFA1 /* ttVideodspInitArm.c */; };
+		27C98AF11E33AD450018DFA1 /* ttVideodspInitArmv5te.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98ADD1E33AD450018DFA1 /* ttVideodspInitArmv5te.c */; };
+		27C98AF51E33AD820018DFA1 /* ttVideoDec.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C98AF41E33AD820018DFA1 /* ttVideoDec.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27AE19901E4CAA2E0074CDD1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27C98A0D1E33AB090018DFA1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		27AE19941E4CAA2E0074CDD1 /* libqcH264Dec_i386_64.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libqcH264Dec_i386_64.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		27C98A0F1E33AB090018DFA1 /* libqcH264Dec.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libqcH264Dec.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		27C98A511E33ABC70018DFA1 /* ttAtomic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttAtomic.c; path = ../../../../../../codec/gk/h264dec/src/ttAtomic.c; sourceTree = "<group>"; };
+		27C98A521E33ABC70018DFA1 /* ttAvpacket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttAvpacket.c; path = ../../../../../../codec/gk/h264dec/src/ttAvpacket.c; sourceTree = "<group>"; };
+		27C98A541E33ABC70018DFA1 /* ttBitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttBitstream.c; path = ../../../../../../codec/gk/h264dec/src/ttBitstream.c; sourceTree = "<group>"; };
+		27C98A551E33ABC70018DFA1 /* ttBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttBuffer.c; path = ../../../../../../codec/gk/h264dec/src/ttBuffer.c; sourceTree = "<group>"; };
+		27C98A561E33ABC70018DFA1 /* ttCabac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttCabac.c; path = ../../../../../../codec/gk/h264dec/src/ttCabac.c; sourceTree = "<group>"; };
+		27C98A571E33ABC70018DFA1 /* ttCpu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttCpu.c; path = ../../../../../../codec/gk/h264dec/src/ttCpu.c; sourceTree = "<group>"; };
+		27C98A581E33ABC70018DFA1 /* ttDict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttDict.c; path = ../../../../../../codec/gk/h264dec/src/ttDict.c; sourceTree = "<group>"; };
+		27C98A591E33ABC70018DFA1 /* ttDisplay.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttDisplay.c; path = ../../../../../../codec/gk/h264dec/src/ttDisplay.c; sourceTree = "<group>"; };
+		27C98A5A1E33ABC70018DFA1 /* ttErrorResilience.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttErrorResilience.c; path = ../../../../../../codec/gk/h264dec/src/ttErrorResilience.c; sourceTree = "<group>"; };
+		27C98A5B1E33ABC70018DFA1 /* ttFrame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttFrame.c; path = ../../../../../../codec/gk/h264dec/src/ttFrame.c; sourceTree = "<group>"; };
+		27C98A5C1E33ABC70018DFA1 /* ttGolomb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttGolomb.c; path = ../../../../../../codec/gk/h264dec/src/ttGolomb.c; sourceTree = "<group>"; };
+		27C98A5D1E33ABC70018DFA1 /* ttH264.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264.c; path = ../../../../../../codec/gk/h264dec/src/ttH264.c; sourceTree = "<group>"; };
+		27C98A5F1E33ABC70018DFA1 /* ttH264Cabac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264Cabac.c; path = ../../../../../../codec/gk/h264dec/src/ttH264Cabac.c; sourceTree = "<group>"; };
+		27C98A601E33ABC70018DFA1 /* ttH264Cavlc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264Cavlc.c; path = ../../../../../../codec/gk/h264dec/src/ttH264Cavlc.c; sourceTree = "<group>"; };
+		27C98A611E33ABC70018DFA1 /* ttH264chroma.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264chroma.c; path = ../../../../../../codec/gk/h264dec/src/ttH264chroma.c; sourceTree = "<group>"; };
+		27C98A631E33ABC70018DFA1 /* ttH264Direct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264Direct.c; path = ../../../../../../codec/gk/h264dec/src/ttH264Direct.c; sourceTree = "<group>"; };
+		27C98A641E33ABC70018DFA1 /* ttH264dsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264dsp.c; path = ../../../../../../codec/gk/h264dec/src/ttH264dsp.c; sourceTree = "<group>"; };
+		27C98A661E33ABC70018DFA1 /* ttH264idct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264idct.c; path = ../../../../../../codec/gk/h264dec/src/ttH264idct.c; sourceTree = "<group>"; };
+		27C98A681E33ABC70018DFA1 /* ttH264Loopfilter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264Loopfilter.c; path = ../../../../../../codec/gk/h264dec/src/ttH264Loopfilter.c; sourceTree = "<group>"; };
+		27C98A691E33ABC70018DFA1 /* ttH264Mb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264Mb.c; path = ../../../../../../codec/gk/h264dec/src/ttH264Mb.c; sourceTree = "<group>"; };
+		27C98A6C1E33ABC70018DFA1 /* ttH264Picture.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264Picture.c; path = ../../../../../../codec/gk/h264dec/src/ttH264Picture.c; sourceTree = "<group>"; };
+		27C98A6D1E33ABC70018DFA1 /* ttH264pred.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264pred.c; path = ../../../../../../codec/gk/h264dec/src/ttH264pred.c; sourceTree = "<group>"; };
+		27C98A6F1E33ABC70018DFA1 /* ttH264Ps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264Ps.c; path = ../../../../../../codec/gk/h264dec/src/ttH264Ps.c; sourceTree = "<group>"; };
+		27C98A701E33ABC70018DFA1 /* ttH264qpel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264qpel.c; path = ../../../../../../codec/gk/h264dec/src/ttH264qpel.c; sourceTree = "<group>"; };
+		27C98A721E33ABC70018DFA1 /* ttH264Refs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264Refs.c; path = ../../../../../../codec/gk/h264dec/src/ttH264Refs.c; sourceTree = "<group>"; };
+		27C98A731E33ABC70018DFA1 /* ttH264Sei.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264Sei.c; path = ../../../../../../codec/gk/h264dec/src/ttH264Sei.c; sourceTree = "<group>"; };
+		27C98A741E33ABC70018DFA1 /* ttH264Slice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264Slice.c; path = ../../../../../../codec/gk/h264dec/src/ttH264Slice.c; sourceTree = "<group>"; };
+		27C98A761E33ABC70018DFA1 /* ttImgutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttImgutils.c; path = ../../../../../../codec/gk/h264dec/src/ttImgutils.c; sourceTree = "<group>"; };
+		27C98A771E33ABC70018DFA1 /* ttIntmath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttIntmath.c; path = ../../../../../../codec/gk/h264dec/src/ttIntmath.c; sourceTree = "<group>"; };
+		27C98A781E33ABC70018DFA1 /* ttMathematics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttMathematics.c; path = ../../../../../../codec/gk/h264dec/src/ttMathematics.c; sourceTree = "<group>"; };
+		27C98A791E33ABC70018DFA1 /* ttMathTables.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttMathTables.c; path = ../../../../../../codec/gk/h264dec/src/ttMathTables.c; sourceTree = "<group>"; };
+		27C98A7A1E33ABC70018DFA1 /* ttMem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttMem.c; path = ../../../../../../codec/gk/h264dec/src/ttMem.c; sourceTree = "<group>"; };
+		27C98A7B1E33ABC70018DFA1 /* ttOpt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttOpt.c; path = ../../../../../../codec/gk/h264dec/src/ttOpt.c; sourceTree = "<group>"; };
+		27C98A7C1E33ABC70018DFA1 /* ttOptions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttOptions.c; path = ../../../../../../codec/gk/h264dec/src/ttOptions.c; sourceTree = "<group>"; };
+		27C98A7E1E33ABC70018DFA1 /* ttPixdesc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttPixdesc.c; path = ../../../../../../codec/gk/h264dec/src/ttPixdesc.c; sourceTree = "<group>"; };
+		27C98A7F1E33ABC70018DFA1 /* ttPthread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttPthread.c; path = ../../../../../../codec/gk/h264dec/src/ttPthread.c; sourceTree = "<group>"; };
+		27C98A801E33ABC70018DFA1 /* ttPthreadFrame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttPthreadFrame.c; path = ../../../../../../codec/gk/h264dec/src/ttPthreadFrame.c; sourceTree = "<group>"; };
+		27C98A811E33ABC70018DFA1 /* ttPthreadSlice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttPthreadSlice.c; path = ../../../../../../codec/gk/h264dec/src/ttPthreadSlice.c; sourceTree = "<group>"; };
+		27C98A831E33ABC70018DFA1 /* ttRational.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttRational.c; path = ../../../../../../codec/gk/h264dec/src/ttRational.c; sourceTree = "<group>"; };
+		27C98A841E33ABC70018DFA1 /* ttUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttUtils.c; path = ../../../../../../codec/gk/h264dec/src/ttUtils.c; sourceTree = "<group>"; };
+		27C98A851E33ABC70018DFA1 /* ttVideodsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttVideodsp.c; path = ../../../../../../codec/gk/h264dec/src/ttVideodsp.c; sourceTree = "<group>"; };
+		27C98ABF1E33AD450018DFA1 /* asm-offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "asm-offsets.h"; path = "../../../../../../codec/gk/h264dec/src/arm_ios/asm-offsets.h"; sourceTree = "<group>"; };
+		27C98AC01E33AD450018DFA1 /* asm.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = asm.S; path = ../../../../../../codec/gk/h264dec/src/arm_ios/asm.S; sourceTree = "<group>"; };
+		27C98AC11E33AD450018DFA1 /* cpu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpu.c; path = ../../../../../../codec/gk/h264dec/src/arm_ios/cpu.c; sourceTree = "<group>"; };
+		27C98AC21E33AD450018DFA1 /* cpu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpu.h; path = ../../../../../../codec/gk/h264dec/src/arm_ios/cpu.h; sourceTree = "<group>"; };
+		27C98AC31E33AD450018DFA1 /* intreadwrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = intreadwrite.h; path = ../../../../../../codec/gk/h264dec/src/arm_ios/intreadwrite.h; sourceTree = "<group>"; };
+		27C98AC51E33AD450018DFA1 /* neon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = neon.S; path = ../../../../../../codec/gk/h264dec/src/arm_ios/neon.S; sourceTree = "<group>"; };
+		27C98AC61E33AD450018DFA1 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = timer.h; path = ../../../../../../codec/gk/h264dec/src/arm_ios/timer.h; sourceTree = "<group>"; };
+		27C98AC71E33AD450018DFA1 /* ttBlockdspArm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttBlockdspArm.h; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttBlockdspArm.h; sourceTree = "<group>"; };
+		27C98ACA1E33AD450018DFA1 /* ttBlockdspNeon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = ttBlockdspNeon.S; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttBlockdspNeon.S; sourceTree = "<group>"; };
+		27C98ACD1E33AD450018DFA1 /* ttH264chromaInitArm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264chromaInitArm.c; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttH264chromaInitArm.c; sourceTree = "<group>"; };
+		27C98ACE1E33AD450018DFA1 /* ttH264cmcNeon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = ttH264cmcNeon.S; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttH264cmcNeon.S; sourceTree = "<group>"; };
+		27C98ACF1E33AD450018DFA1 /* ttH264DecArm32Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttH264DecArm32Macro.h; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttH264DecArm32Macro.h; sourceTree = "<group>"; };
+		27C98AD01E33AD450018DFA1 /* ttH264dspInitArm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264dspInitArm.c; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttH264dspInitArm.c; sourceTree = "<group>"; };
+		27C98AD11E33AD450018DFA1 /* ttH264dspNeon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = ttH264dspNeon.S; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttH264dspNeon.S; sourceTree = "<group>"; };
+		27C98AD21E33AD450018DFA1 /* ttH264idctNeon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = ttH264idctNeon.S; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttH264idctNeon.S; sourceTree = "<group>"; };
+		27C98AD31E33AD450018DFA1 /* ttH264predInitArm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264predInitArm.c; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttH264predInitArm.c; sourceTree = "<group>"; };
+		27C98AD41E33AD450018DFA1 /* ttH264predNeon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = ttH264predNeon.S; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttH264predNeon.S; sourceTree = "<group>"; };
+		27C98AD51E33AD450018DFA1 /* ttH264qpelInitArm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttH264qpelInitArm.c; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttH264qpelInitArm.c; sourceTree = "<group>"; };
+		27C98AD61E33AD450018DFA1 /* ttH264qpelNeon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = ttH264qpelNeon.S; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttH264qpelNeon.S; sourceTree = "<group>"; };
+		27C98AD71E33AD450018DFA1 /* ttHpeldspNeon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = ttHpeldspNeon.S; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttHpeldspNeon.S; sourceTree = "<group>"; };
+		27C98ADA1E33AD450018DFA1 /* ttVideodspArm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttVideodspArm.h; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttVideodspArm.h; sourceTree = "<group>"; };
+		27C98ADB1E33AD450018DFA1 /* ttVideodspArmv5te.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = ttVideodspArmv5te.S; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttVideodspArmv5te.S; sourceTree = "<group>"; };
+		27C98ADC1E33AD450018DFA1 /* ttVideodspInitArm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttVideodspInitArm.c; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttVideodspInitArm.c; sourceTree = "<group>"; };
+		27C98ADD1E33AD450018DFA1 /* ttVideodspInitArmv5te.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttVideodspInitArmv5te.c; path = ../../../../../../codec/gk/h264dec/src/arm_ios/ttVideodspInitArmv5te.c; sourceTree = "<group>"; };
+		27C98AF31E33AD820018DFA1 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../../../../../../codec/gk/h264dec/config.h; sourceTree = "<group>"; };
+		27C98AF41E33AD820018DFA1 /* ttVideoDec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ttVideoDec.c; path = ../../../../../../codec/gk/h264dec/ttVideoDec.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27AE198F1E4CAA2E0074CDD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27C98A0C1E33AB090018DFA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27C98A061E33AB090018DFA1 = {
+			isa = PBXGroup;
+			children = (
+				27C98AF31E33AD820018DFA1 /* config.h */,
+				27C98AF41E33AD820018DFA1 /* ttVideoDec.c */,
+				27C98ABD1E33ACF70018DFA1 /* asm */,
+				27C98A501E33ABA50018DFA1 /* source */,
+				27C98A101E33AB090018DFA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27C98A101E33AB090018DFA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27C98A0F1E33AB090018DFA1 /* libqcH264Dec.a */,
+				27AE19941E4CAA2E0074CDD1 /* libqcH264Dec_i386_64.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27C98A501E33ABA50018DFA1 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				27C98A511E33ABC70018DFA1 /* ttAtomic.c */,
+				27C98A521E33ABC70018DFA1 /* ttAvpacket.c */,
+				27C98A541E33ABC70018DFA1 /* ttBitstream.c */,
+				27C98A551E33ABC70018DFA1 /* ttBuffer.c */,
+				27C98A561E33ABC70018DFA1 /* ttCabac.c */,
+				27C98A571E33ABC70018DFA1 /* ttCpu.c */,
+				27C98A581E33ABC70018DFA1 /* ttDict.c */,
+				27C98A591E33ABC70018DFA1 /* ttDisplay.c */,
+				27C98A5A1E33ABC70018DFA1 /* ttErrorResilience.c */,
+				27C98A5B1E33ABC70018DFA1 /* ttFrame.c */,
+				27C98A5C1E33ABC70018DFA1 /* ttGolomb.c */,
+				27C98A5D1E33ABC70018DFA1 /* ttH264.c */,
+				27C98A5F1E33ABC70018DFA1 /* ttH264Cabac.c */,
+				27C98A601E33ABC70018DFA1 /* ttH264Cavlc.c */,
+				27C98A611E33ABC70018DFA1 /* ttH264chroma.c */,
+				27C98A631E33ABC70018DFA1 /* ttH264Direct.c */,
+				27C98A641E33ABC70018DFA1 /* ttH264dsp.c */,
+				27C98A661E33ABC70018DFA1 /* ttH264idct.c */,
+				27C98A681E33ABC70018DFA1 /* ttH264Loopfilter.c */,
+				27C98A691E33ABC70018DFA1 /* ttH264Mb.c */,
+				27C98A6C1E33ABC70018DFA1 /* ttH264Picture.c */,
+				27C98A6D1E33ABC70018DFA1 /* ttH264pred.c */,
+				27C98A6F1E33ABC70018DFA1 /* ttH264Ps.c */,
+				27C98A701E33ABC70018DFA1 /* ttH264qpel.c */,
+				27C98A721E33ABC70018DFA1 /* ttH264Refs.c */,
+				27C98A731E33ABC70018DFA1 /* ttH264Sei.c */,
+				27C98A741E33ABC70018DFA1 /* ttH264Slice.c */,
+				27C98A761E33ABC70018DFA1 /* ttImgutils.c */,
+				27C98A771E33ABC70018DFA1 /* ttIntmath.c */,
+				27C98A781E33ABC70018DFA1 /* ttMathematics.c */,
+				27C98A791E33ABC70018DFA1 /* ttMathTables.c */,
+				27C98A7A1E33ABC70018DFA1 /* ttMem.c */,
+				27C98A7B1E33ABC70018DFA1 /* ttOpt.c */,
+				27C98A7C1E33ABC70018DFA1 /* ttOptions.c */,
+				27C98A7E1E33ABC70018DFA1 /* ttPixdesc.c */,
+				27C98A7F1E33ABC70018DFA1 /* ttPthread.c */,
+				27C98A801E33ABC70018DFA1 /* ttPthreadFrame.c */,
+				27C98A811E33ABC70018DFA1 /* ttPthreadSlice.c */,
+				27C98A831E33ABC70018DFA1 /* ttRational.c */,
+				27C98A841E33ABC70018DFA1 /* ttUtils.c */,
+				27C98A851E33ABC70018DFA1 /* ttVideodsp.c */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		27C98ABD1E33ACF70018DFA1 /* asm */ = {
+			isa = PBXGroup;
+			children = (
+				27C98ABF1E33AD450018DFA1 /* asm-offsets.h */,
+				27C98AC01E33AD450018DFA1 /* asm.S */,
+				27C98AC11E33AD450018DFA1 /* cpu.c */,
+				27C98AC21E33AD450018DFA1 /* cpu.h */,
+				27C98AC31E33AD450018DFA1 /* intreadwrite.h */,
+				27C98AC51E33AD450018DFA1 /* neon.S */,
+				27C98AC61E33AD450018DFA1 /* timer.h */,
+				27C98AC71E33AD450018DFA1 /* ttBlockdspArm.h */,
+				27C98ACA1E33AD450018DFA1 /* ttBlockdspNeon.S */,
+				27C98ACD1E33AD450018DFA1 /* ttH264chromaInitArm.c */,
+				27C98ACE1E33AD450018DFA1 /* ttH264cmcNeon.S */,
+				27C98ACF1E33AD450018DFA1 /* ttH264DecArm32Macro.h */,
+				27C98AD01E33AD450018DFA1 /* ttH264dspInitArm.c */,
+				27C98AD11E33AD450018DFA1 /* ttH264dspNeon.S */,
+				27C98AD21E33AD450018DFA1 /* ttH264idctNeon.S */,
+				27C98AD31E33AD450018DFA1 /* ttH264predInitArm.c */,
+				27C98AD41E33AD450018DFA1 /* ttH264predNeon.S */,
+				27C98AD51E33AD450018DFA1 /* ttH264qpelInitArm.c */,
+				27C98AD61E33AD450018DFA1 /* ttH264qpelNeon.S */,
+				27C98AD71E33AD450018DFA1 /* ttHpeldspNeon.S */,
+				27C98ADA1E33AD450018DFA1 /* ttVideodspArm.h */,
+				27C98ADB1E33AD450018DFA1 /* ttVideodspArmv5te.S */,
+				27C98ADC1E33AD450018DFA1 /* ttVideodspInitArm.c */,
+				27C98ADD1E33AD450018DFA1 /* ttVideodspInitArmv5te.c */,
+			);
+			name = asm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27AE19521E4CAA2E0074CDD1 /* h264dec_i386_64 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27AE19911E4CAA2E0074CDD1 /* Build configuration list for PBXNativeTarget "h264dec_i386_64" */;
+			buildPhases = (
+				27AE19531E4CAA2E0074CDD1 /* Sources */,
+				27AE198F1E4CAA2E0074CDD1 /* Frameworks */,
+				27AE19901E4CAA2E0074CDD1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = h264dec_i386_64;
+			productName = h264dec;
+			productReference = 27AE19941E4CAA2E0074CDD1 /* libqcH264Dec_i386_64.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		27C98A0E1E33AB090018DFA1 /* h264dec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27C98A181E33AB090018DFA1 /* Build configuration list for PBXNativeTarget "h264dec" */;
+			buildPhases = (
+				27C98A0B1E33AB090018DFA1 /* Sources */,
+				27C98A0C1E33AB090018DFA1 /* Frameworks */,
+				27C98A0D1E33AB090018DFA1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = h264dec;
+			productName = h264dec;
+			productReference = 27C98A0F1E33AB090018DFA1 /* libqcH264Dec.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27C98A071E33AB090018DFA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = qiniu;
+				TargetAttributes = {
+					27C98A0E1E33AB090018DFA1 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 27C98A0A1E33AB090018DFA1 /* Build configuration list for PBXProject "h264dec" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27C98A061E33AB090018DFA1;
+			productRefGroup = 27C98A101E33AB090018DFA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27C98A0E1E33AB090018DFA1 /* h264dec */,
+				27AE19521E4CAA2E0074CDD1 /* h264dec_i386_64 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27AE19531E4CAA2E0074CDD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27AE19541E4CAA2E0074CDD1 /* ttOpt.c in Sources */,
+				27AE19551E4CAA2E0074CDD1 /* ttH264idctNeon.S in Sources */,
+				27AE19561E4CAA2E0074CDD1 /* ttAvpacket.c in Sources */,
+				27AE19571E4CAA2E0074CDD1 /* ttH264Refs.c in Sources */,
+				27AE19581E4CAA2E0074CDD1 /* ttH264predNeon.S in Sources */,
+				27AE19591E4CAA2E0074CDD1 /* ttHpeldspNeon.S in Sources */,
+				27AE195A1E4CAA2E0074CDD1 /* ttH264qpelInitArm.c in Sources */,
+				27AE195B1E4CAA2E0074CDD1 /* ttH264qpelNeon.S in Sources */,
+				27AE195C1E4CAA2E0074CDD1 /* ttIntmath.c in Sources */,
+				27AE195D1E4CAA2E0074CDD1 /* ttOptions.c in Sources */,
+				27AE195E1E4CAA2E0074CDD1 /* ttRational.c in Sources */,
+				27AE195F1E4CAA2E0074CDD1 /* ttMem.c in Sources */,
+				27AE19601E4CAA2E0074CDD1 /* ttH264Sei.c in Sources */,
+				27AE19611E4CAA2E0074CDD1 /* ttUtils.c in Sources */,
+				27AE19621E4CAA2E0074CDD1 /* ttH264dspNeon.S in Sources */,
+				27AE19631E4CAA2E0074CDD1 /* ttDisplay.c in Sources */,
+				27AE19641E4CAA2E0074CDD1 /* ttH264Slice.c in Sources */,
+				27AE19651E4CAA2E0074CDD1 /* cpu.c in Sources */,
+				27AE19661E4CAA2E0074CDD1 /* ttPthreadFrame.c in Sources */,
+				27AE19671E4CAA2E0074CDD1 /* ttImgutils.c in Sources */,
+				27AE19681E4CAA2E0074CDD1 /* ttVideodspInitArm.c in Sources */,
+				27AE19691E4CAA2E0074CDD1 /* ttVideodspInitArmv5te.c in Sources */,
+				27AE196A1E4CAA2E0074CDD1 /* ttH264idct.c in Sources */,
+				27AE196B1E4CAA2E0074CDD1 /* ttBuffer.c in Sources */,
+				27AE196C1E4CAA2E0074CDD1 /* ttH264Mb.c in Sources */,
+				27AE196D1E4CAA2E0074CDD1 /* ttH264Cavlc.c in Sources */,
+				27AE196E1E4CAA2E0074CDD1 /* ttH264Cabac.c in Sources */,
+				27AE196F1E4CAA2E0074CDD1 /* ttBlockdspNeon.S in Sources */,
+				27AE19701E4CAA2E0074CDD1 /* ttH264cmcNeon.S in Sources */,
+				27AE19711E4CAA2E0074CDD1 /* ttMathTables.c in Sources */,
+				27AE19721E4CAA2E0074CDD1 /* ttH264chromaInitArm.c in Sources */,
+				27AE19731E4CAA2E0074CDD1 /* ttH264Loopfilter.c in Sources */,
+				27AE19741E4CAA2E0074CDD1 /* ttH264chroma.c in Sources */,
+				27AE19751E4CAA2E0074CDD1 /* ttVideoDec.c in Sources */,
+				27AE19761E4CAA2E0074CDD1 /* ttH264Picture.c in Sources */,
+				27AE19771E4CAA2E0074CDD1 /* ttCabac.c in Sources */,
+				27AE19781E4CAA2E0074CDD1 /* ttPthreadSlice.c in Sources */,
+				27AE19791E4CAA2E0074CDD1 /* ttBitstream.c in Sources */,
+				27AE197A1E4CAA2E0074CDD1 /* ttAtomic.c in Sources */,
+				27AE197B1E4CAA2E0074CDD1 /* neon.S in Sources */,
+				27AE197C1E4CAA2E0074CDD1 /* ttH264predInitArm.c in Sources */,
+				27AE197D1E4CAA2E0074CDD1 /* ttPthread.c in Sources */,
+				27AE197E1E4CAA2E0074CDD1 /* ttH264dspInitArm.c in Sources */,
+				27AE197F1E4CAA2E0074CDD1 /* ttVideodsp.c in Sources */,
+				27AE19801E4CAA2E0074CDD1 /* ttDict.c in Sources */,
+				27AE19811E4CAA2E0074CDD1 /* ttH264pred.c in Sources */,
+				27AE19821E4CAA2E0074CDD1 /* ttH264dsp.c in Sources */,
+				27AE19831E4CAA2E0074CDD1 /* ttErrorResilience.c in Sources */,
+				27AE19841E4CAA2E0074CDD1 /* ttH264.c in Sources */,
+				27AE19851E4CAA2E0074CDD1 /* ttH264Ps.c in Sources */,
+				27AE19861E4CAA2E0074CDD1 /* ttH264Direct.c in Sources */,
+				27AE19871E4CAA2E0074CDD1 /* ttFrame.c in Sources */,
+				27AE19881E4CAA2E0074CDD1 /* asm.S in Sources */,
+				27AE19891E4CAA2E0074CDD1 /* ttMathematics.c in Sources */,
+				27AE198A1E4CAA2E0074CDD1 /* ttVideodspArmv5te.S in Sources */,
+				27AE198B1E4CAA2E0074CDD1 /* ttH264qpel.c in Sources */,
+				27AE198C1E4CAA2E0074CDD1 /* ttCpu.c in Sources */,
+				27AE198D1E4CAA2E0074CDD1 /* ttPixdesc.c in Sources */,
+				27AE198E1E4CAA2E0074CDD1 /* ttGolomb.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27C98A0B1E33AB090018DFA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C98AB11E33ABC70018DFA1 /* ttOpt.c in Sources */,
+				27C98AE91E33AD450018DFA1 /* ttH264idctNeon.S in Sources */,
+				27C98A881E33ABC70018DFA1 /* ttAvpacket.c in Sources */,
+				27C98AA81E33ABC70018DFA1 /* ttH264Refs.c in Sources */,
+				27C98AEB1E33AD450018DFA1 /* ttH264predNeon.S in Sources */,
+				27C98AEE1E33AD450018DFA1 /* ttHpeldspNeon.S in Sources */,
+				27C98AEC1E33AD450018DFA1 /* ttH264qpelInitArm.c in Sources */,
+				27C98AED1E33AD450018DFA1 /* ttH264qpelNeon.S in Sources */,
+				27C98AAD1E33ABC70018DFA1 /* ttIntmath.c in Sources */,
+				27C98AB21E33ABC70018DFA1 /* ttOptions.c in Sources */,
+				27C98AB91E33ABC70018DFA1 /* ttRational.c in Sources */,
+				27C98AB01E33ABC70018DFA1 /* ttMem.c in Sources */,
+				27C98AA91E33ABC70018DFA1 /* ttH264Sei.c in Sources */,
+				27C98ABA1E33ABC70018DFA1 /* ttUtils.c in Sources */,
+				27C98AE81E33AD450018DFA1 /* ttH264dspNeon.S in Sources */,
+				27C98A8F1E33ABC70018DFA1 /* ttDisplay.c in Sources */,
+				27C98AAA1E33ABC70018DFA1 /* ttH264Slice.c in Sources */,
+				27C98ADF1E33AD450018DFA1 /* cpu.c in Sources */,
+				27C98AB61E33ABC70018DFA1 /* ttPthreadFrame.c in Sources */,
+				27C98AAC1E33ABC70018DFA1 /* ttImgutils.c in Sources */,
+				27C98AF01E33AD450018DFA1 /* ttVideodspInitArm.c in Sources */,
+				27C98AF11E33AD450018DFA1 /* ttVideodspInitArmv5te.c in Sources */,
+				27C98A9C1E33ABC70018DFA1 /* ttH264idct.c in Sources */,
+				27C98A8B1E33ABC70018DFA1 /* ttBuffer.c in Sources */,
+				27C98A9F1E33ABC70018DFA1 /* ttH264Mb.c in Sources */,
+				27C98A961E33ABC70018DFA1 /* ttH264Cavlc.c in Sources */,
+				27C98A951E33ABC70018DFA1 /* ttH264Cabac.c in Sources */,
+				27C98AE41E33AD450018DFA1 /* ttBlockdspNeon.S in Sources */,
+				27C98AE61E33AD450018DFA1 /* ttH264cmcNeon.S in Sources */,
+				27C98AAF1E33ABC70018DFA1 /* ttMathTables.c in Sources */,
+				27C98AE51E33AD450018DFA1 /* ttH264chromaInitArm.c in Sources */,
+				27C98A9E1E33ABC70018DFA1 /* ttH264Loopfilter.c in Sources */,
+				27C98A971E33ABC70018DFA1 /* ttH264chroma.c in Sources */,
+				27C98AF51E33AD820018DFA1 /* ttVideoDec.c in Sources */,
+				27C98AA21E33ABC70018DFA1 /* ttH264Picture.c in Sources */,
+				27C98A8C1E33ABC70018DFA1 /* ttCabac.c in Sources */,
+				27C98AB71E33ABC70018DFA1 /* ttPthreadSlice.c in Sources */,
+				27C98A8A1E33ABC70018DFA1 /* ttBitstream.c in Sources */,
+				27C98A871E33ABC70018DFA1 /* ttAtomic.c in Sources */,
+				27C98AE11E33AD450018DFA1 /* neon.S in Sources */,
+				27C98AEA1E33AD450018DFA1 /* ttH264predInitArm.c in Sources */,
+				27C98AB51E33ABC70018DFA1 /* ttPthread.c in Sources */,
+				27C98AE71E33AD450018DFA1 /* ttH264dspInitArm.c in Sources */,
+				27C98ABB1E33ABC70018DFA1 /* ttVideodsp.c in Sources */,
+				27C98A8E1E33ABC70018DFA1 /* ttDict.c in Sources */,
+				27C98AA31E33ABC70018DFA1 /* ttH264pred.c in Sources */,
+				27C98A9A1E33ABC70018DFA1 /* ttH264dsp.c in Sources */,
+				27C98A901E33ABC70018DFA1 /* ttErrorResilience.c in Sources */,
+				27C98A931E33ABC70018DFA1 /* ttH264.c in Sources */,
+				27C98AA51E33ABC70018DFA1 /* ttH264Ps.c in Sources */,
+				27C98A991E33ABC70018DFA1 /* ttH264Direct.c in Sources */,
+				27C98A911E33ABC70018DFA1 /* ttFrame.c in Sources */,
+				27C98ADE1E33AD450018DFA1 /* asm.S in Sources */,
+				27C98AAE1E33ABC70018DFA1 /* ttMathematics.c in Sources */,
+				27C98AEF1E33AD450018DFA1 /* ttVideodspArmv5te.S in Sources */,
+				27C98AA61E33ABC70018DFA1 /* ttH264qpel.c in Sources */,
+				27C98A8D1E33ABC70018DFA1 /* ttCpu.c in Sources */,
+				27C98AB41E33ABC70018DFA1 /* ttPixdesc.c in Sources */,
+				27C98A921E33ABC70018DFA1 /* ttGolomb.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		27AE19921E4CAA2E0074CDD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = qcH264Dec_i386_64;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		27AE19931E4CAA2E0074CDD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = qcH264Dec_i386_64;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		27C98A161E33AB090018DFA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = ../../../../../../../bin/ios;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../../../codec/gk/include,
+					../../../../../../codec/gk/h264dec/src/,
+					../../../../../../codec/gk/h264dec/inc/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = qcH264Dec;
+				PRODUCT_NAME = qcH264Dec;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		27C98A171E33AB090018DFA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = ../../../../../../../bin/ios;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../../../codec/gk/include,
+					../../../../../../codec/gk/h264dec/src/,
+					../../../../../../codec/gk/h264dec/inc/,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = qcH264Dec;
+				PRODUCT_NAME = qcH264Dec;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		27C98A191E33AB090018DFA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = qcH264Dec;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		27C98A1A1E33AB090018DFA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = qcH264Dec;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27AE19911E4CAA2E0074CDD1 /* Build configuration list for PBXNativeTarget "h264dec_i386_64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27AE19921E4CAA2E0074CDD1 /* Debug */,
+				27AE19931E4CAA2E0074CDD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27C98A0A1E33AB090018DFA1 /* Build configuration list for PBXProject "h264dec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27C98A161E33AB090018DFA1 /* Debug */,
+				27C98A171E33AB090018DFA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27C98A181E33AB090018DFA1 /* Build configuration list for PBXNativeTarget "h264dec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27C98A191E33AB090018DFA1 /* Debug */,
+				27C98A1A1E33AB090018DFA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27C98A071E33AB090018DFA1 /* Project object */;
+}

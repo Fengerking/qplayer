@@ -1,0 +1,6 @@
+LIBRARY	AACDec.dll
+
+EXPORTS
+	ttGetAACDecAPI
+	
+	

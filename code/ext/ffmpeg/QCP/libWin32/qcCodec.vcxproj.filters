@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Speex Files">
+      <UniqueIdentifier>{dcd3cdac-d683-42bc-b319-08a306522e06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Speex Files\Source Files">
+      <UniqueIdentifier>{9ffc0d3b-ba0f-4689-b61b-bfc281c6a1a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Speex Files\Header Files">
+      <UniqueIdentifier>{fa811d59-7d00-4517-937b-adb0327ca5bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Speex Files\Header Files\Header">
+      <UniqueIdentifier>{10dcdb6e-34ab-4aab-b7ad-e6e20b1bb3fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Speex Files\Header Files\Speex">
+      <UniqueIdentifier>{45bf99b1-437f-4308-81f0-ac5cd7295532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wrap Files">
+      <UniqueIdentifier>{531f3b7f-fc40-45ba-bbf3-5a9abd19d100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wrap Files\Include">
+      <UniqueIdentifier>{5538a625-be0a-4d19-8f34-3214e7931c8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wrap Files\IO Files">
+      <UniqueIdentifier>{def44518-bd3f-4c01-a9db-ad6004373fd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wrap Files\utils Files">
+      <UniqueIdentifier>{83d0477d-5d35-4ff0-9d0a-a7a557278820}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\inc\config.h">
+      <Filter>Speex Files\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\inc\speex\speex.h">
+      <Filter>Speex Files\Header Files\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\inc\speex\speex_bits.h">
+      <Filter>Speex Files\Header Files\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\inc\speex\speex_callbacks.h">
+      <Filter>Speex Files\Header Files\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\inc\speex\speex_header.h">
+      <Filter>Speex Files\Header Files\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\inc\speex\speex_stereo.h">
+      <Filter>Speex Files\Header Files\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\inc\speex\speex_types.h">
+      <Filter>Speex Files\Header Files\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\arch.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\bfin.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\cb_search.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\cb_search_arm4.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\cb_search_bfin.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\cb_search_sse.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\fftwrap.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\filters.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\filters_arm4.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\filters_bfin.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\filters_sse.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\fixed_arm4.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\fixed_arm5e.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\fixed_bfin.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\fixed_debug.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\fixed_generic.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\kiss_fft.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\kiss_fftr.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\lpc.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\lpc_bfin.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\lsp.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\lsp_bfin.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\ltp.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\ltp_arm4.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\ltp_bfin.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\ltp_sse.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\math_approx.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\misc_bfin.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\modes.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\nb_celp.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\os_support.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\quant_lsp.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\quant_lsp_bfin.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\sb_celp.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\smallft.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\stack_alloc.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\vbr.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\vorbis_psy.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\vq.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\vq_arm4.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\vq_bfin.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\vq_sse.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\codec\speex\src\_kiss_fft_guts.h">
+      <Filter>Speex Files\Header Files\Speex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\qcData.h">
+      <Filter>Wrap Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\qcDef.h">
+      <Filter>Wrap Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\qcErr.h">
+      <Filter>Wrap Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\qcIO.h">
+      <Filter>Wrap Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\qcMsg.h">
+      <Filter>Wrap Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\qcParser.h">
+      <Filter>Wrap Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\qcType.h">
+      <Filter>Wrap Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qcFFLog.h">
+      <Filter>Wrap Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CFFMpegParser.h">
+      <Filter>Wrap Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qcFFWrap.h">
+      <Filter>Wrap Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBaseFFParser.h">
+      <Filter>Wrap Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CFFBaseIO.h">
+      <Filter>Wrap Files\IO Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CFFMpegInIO.h">
+      <Filter>Wrap Files\IO Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CFFMpegIO.h">
+      <Filter>Wrap Files\IO Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBaseFFMuxer.h">
+      <Filter>Wrap Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\util\UAVParser.h">
+      <Filter>Wrap Files\utils Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\base\CBitReader.h">
+      <Filter>Wrap Files\utils Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\bits.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\cb_search.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\exc_10_16_table.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\exc_10_32_table.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\exc_20_32_table.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\exc_5_256_table.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\exc_5_64_table.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\exc_8_128_table.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\fftwrap.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\filters.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\gain_table.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\gain_table_lbr.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\hexc_10_32_table.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\hexc_table.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\high_lsp_tables.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\kiss_fft.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\kiss_fftr.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\lpc.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\lsp.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\lsp_tables_nb.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\ltp.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\modes.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\modes_wb.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\nb_celp.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\quant_lsp.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\sb_celp.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\smallft.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\speex.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\speex_callbacks.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\speex_header.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\stereo.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\vbr.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\vorbis_psy.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\vq.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\codec\speex\src\window.c">
+      <Filter>Speex Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\qcColorCvtR.c">
+      <Filter>Wrap Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\qcCodec.c">
+      <Filter>Wrap Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\qcEncoder.c">
+      <Filter>Wrap Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\qcFFLog.c">
+      <Filter>Wrap Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CFFMpegParser.cpp">
+      <Filter>Wrap Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcCodecDll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qcFFWrap.c">
+      <Filter>Wrap Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBaseFFParser.cpp">
+      <Filter>Wrap Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\qcFFParser.cpp">
+      <Filter>Wrap Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CFFBaseIO.cpp">
+      <Filter>Wrap Files\IO Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CFFMpegInIO.cpp">
+      <Filter>Wrap Files\IO Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CFFMpegIO.cpp">
+      <Filter>Wrap Files\IO Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\qcFFMuxer.cpp">
+      <Filter>Wrap Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBaseFFMuxer.cpp">
+      <Filter>Wrap Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\util\UAVParser.cpp">
+      <Filter>Wrap Files\utils Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\base\CBitReader.cpp">
+      <Filter>Wrap Files\utils Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\codec\speex\inc\speex\speex_config_types.h.in">
+      <Filter>Speex Files\Header Files\Header</Filter>
+    </None>
+    <None Include="qcCodec.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="qcCodec.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

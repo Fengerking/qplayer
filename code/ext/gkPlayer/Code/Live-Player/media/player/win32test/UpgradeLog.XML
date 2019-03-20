@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PlayerTest">
+</Property><Property Name="解决方案文件" Value="F:\project\Project_20140515\Platform-Independent\media\player\win32test\PlayerTest.sln">
+</Property><Property Name="Date" Value="2014年5月16日">
+</Property><Property Name="Time" Value="11:48">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="PlayerTest.sln" Description="文件已成功备份为 F:\project\Project_20140515\Platform-Independent\media\player\win32test\PlayerTest.sln.old">
+</Event><Event ErrorLevel="0" Project="PlayerTest" Source="PlayerTest.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="PlayerTest" Source="PlayerTest.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="PlayerTest" Source="PlayerTest.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\player\win32test\PlayerTest.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="PlayerTest" Source="PlayerTest.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="PlayerTest" Source="PlayerTest.vcproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="osal" Source="..\..\..\osal\vcproj\osal\osal.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="osal" Source="..\..\..\osal\vcproj\osal\osal.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\osal\vcproj\osal\osal.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="osal" Source="..\..\..\osal\vcproj\osal\osal.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="osal" Source="..\..\..\osal\vcproj\osal\osal.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MP3Dec" Source="..\..\codec\MP3Dec\vcproj\MP3Dec.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="MP3Dec" Source="..\..\codec\MP3Dec\vcproj\MP3Dec.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="MP3Dec" Source="..\..\codec\MP3Dec\vcproj\MP3Dec.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\codec\MP3Dec\vcproj\MP3Dec.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="MP3Dec" Source="..\..\codec\MP3Dec\vcproj\MP3Dec.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="MP3Dec" Source="..\..\codec\MP3Dec\vcproj\MP3Dec.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="lvmBundle" Source="..\..\audiofx\lvm\vcproj\lvmBundle.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="lvmBundle" Source="..\..\audiofx\lvm\vcproj\lvmBundle.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="lvmBundle" Source="..\..\audiofx\lvm\vcproj\lvmBundle.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\audiofx\lvm\vcproj\lvmBundle.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="lvmBundle" Source="..\..\audiofx\lvm\vcproj\lvmBundle.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="lvmBundle" Source="..\..\audiofx\lvm\vcproj\lvmBundle.vcproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="player" Source="..\vcproj\player.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="player" Source="..\vcproj\player.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\player\vcproj\player.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="player" Source="..\vcproj\player.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="player" Source="..\vcproj\player.vcproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="info" Source="..\..\info\vcproj\info\info.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="info" Source="..\..\info\vcproj\info\info.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\info\vcproj\info\info.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="info" Source="..\..\info\vcproj\info\info.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="info" Source="..\..\info\vcproj\info\info.vcproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="audiofx" Source="..\..\audiofx\vcproj\audiofx.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="audiofx" Source="..\..\audiofx\vcproj\audiofx.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\audiofx\vcproj\audiofx.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="audiofx" Source="..\..\audiofx\vcproj\audiofx.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="audiofx" Source="..\..\audiofx\vcproj\audiofx.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WMADec" Source="..\..\codec\WMADec\vcproj\WMADec.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="WMADec" Source="..\..\codec\WMADec\vcproj\WMADec.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="WMADec" Source="..\..\codec\WMADec\vcproj\WMADec.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\codec\WMADec\vcproj\WMADec.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="WMADec" Source="..\..\codec\WMADec\vcproj\WMADec.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="WMADec" Source="..\..\codec\WMADec\vcproj\WMADec.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="APEDec" Source="..\..\codec\APEDec\vcproj\APEDec.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="APEDec" Source="..\..\codec\APEDec\vcproj\APEDec.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="APEDec" Source="..\..\codec\APEDec\vcproj\APEDec.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\codec\APEDec\vcproj\APEDec.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="APEDec" Source="..\..\codec\APEDec\vcproj\APEDec.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="APEDec" Source="..\..\codec\APEDec\vcproj\APEDec.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FlacDec" Source="..\..\codec\FlacDec\vcproj\FlacDec.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="FlacDec" Source="..\..\codec\FlacDec\vcproj\FlacDec.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="FlacDec" Source="..\..\codec\FlacDec\vcproj\FlacDec.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\codec\FlacDec\vcproj\FlacDec.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="FlacDec" Source="..\..\codec\FlacDec\vcproj\FlacDec.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="FlacDec" Source="..\..\codec\FlacDec\vcproj\FlacDec.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WMAProDec" Source="..\..\codec\WMAProDec\vcproj\WMAProDec.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="WMAProDec" Source="..\..\codec\WMAProDec\vcproj\WMAProDec.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="WMAProDec" Source="..\..\codec\WMAProDec\vcproj\WMAProDec.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\codec\WMAProDec\vcproj\WMAProDec.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="WMAProDec" Source="..\..\codec\WMAProDec\vcproj\WMAProDec.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="WMAProDec" Source="..\..\codec\WMAProDec\vcproj\WMAProDec.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WAVDec" Source="..\..\codec\WAVDec\vcproj\WAVDec.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="WAVDec" Source="..\..\codec\WAVDec\vcproj\WAVDec.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="WAVDec" Source="..\..\codec\WAVDec\vcproj\WAVDec.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\codec\WAVDec\vcproj\WAVDec.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="WAVDec" Source="..\..\codec\WAVDec\vcproj\WAVDec.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="WAVDec" Source="..\..\codec\WAVDec\vcproj\WAVDec.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ALACDec" Source="..\..\codec\ALACDec\vcproj\ALACDec.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="ALACDec" Source="..\..\codec\ALACDec\vcproj\ALACDec.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="ALACDec" Source="..\..\codec\ALACDec\vcproj\ALACDec.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\codec\ALACDec\vcproj\ALACDec.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="ALACDec" Source="..\..\codec\ALACDec\vcproj\ALACDec.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="ALACDec" Source="..\..\codec\ALACDec\vcproj\ALACDec.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WMAFloatDec" Source="..\..\codec\WMAFloatDec\vcproj\WMAFloatDec.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="WMAFloatDec" Source="..\..\codec\WMAFloatDec\vcproj\WMAFloatDec.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="WMAFloatDec" Source="..\..\codec\WMAFloatDec\vcproj\WMAFloatDec.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\codec\WMAFloatDec\vcproj\WMAFloatDec.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="WMAFloatDec" Source="..\..\codec\WMAFloatDec\vcproj\WMAFloatDec.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="WMAFloatDec" Source="..\..\codec\WMAFloatDec\vcproj\WMAFloatDec.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="lvmReverb" Source="..\..\audiofx\lvm\vcproj\lvmReverb.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="lvmReverb" Source="..\..\audiofx\lvm\vcproj\lvmReverb.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="lvmReverb" Source="..\..\audiofx\lvm\vcproj\lvmReverb.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\audiofx\lvm\vcproj\lvmReverb.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="lvmReverb" Source="..\..\audiofx\lvm\vcproj\lvmReverb.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="lvmReverb" Source="..\..\audiofx\lvm\vcproj\lvmReverb.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AudioDecoder" Source="..\..\audiodecoder\AudioDecoder\AudioDecoder.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="AudioDecoder" Source="..\..\audiodecoder\AudioDecoder\AudioDecoder.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="AudioDecoder" Source="..\..\audiodecoder\AudioDecoder\AudioDecoder.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\audiodecoder\AudioDecoder\AudioDecoder.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="AudioDecoder" Source="..\..\audiodecoder\AudioDecoder\AudioDecoder.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="AudioDecoder" Source="..\..\audiodecoder\AudioDecoder\AudioDecoder.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AACDec" Source="..\..\codec\AACDec\vcproj\AACDec.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="AACDec" Source="..\..\codec\AACDec\vcproj\AACDec.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="AACDec" Source="..\..\codec\AACDec\vcproj\AACDec.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\codec\AACDec\vcproj\AACDec.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="AACDec" Source="..\..\codec\AACDec\vcproj\AACDec.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="AACDec" Source="..\..\codec\AACDec\vcproj\AACDec.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DTSDec" Source="..\..\codec\DTSDec\vcproj\DTSDec.vcproj" Description="已不再支持对本地 IIS 服务器的 Web 部署。Web 部署生成工具已从项目设置中删除。">
+</Event><Event ErrorLevel="1" Project="DTSDec" Source="..\..\codec\DTSDec\vcproj\DTSDec.vcproj" Description="此应用程序已更新，包含了与 Windows Vista 的用户帐户控制(UAC)功能相关的设置。默认情况下，当运行在启用了 UAC 的 Windows Vista 上时，此应用程序被标记为以与启动它的进程相同的权限运行。此标记还禁止应用程序以虚拟化方式运行。您可以从此项目的属性页中更改与 UAC 相关的设置。">
+</Event><Event ErrorLevel="0" Project="DTSDec" Source="..\..\codec\DTSDec\vcproj\DTSDec.vcproj" Description="已成功地将项目文件备份为“F:\project\Project_20140515\Platform-Independent\media\codec\DTSDec\vcproj\DTSDec.vcproj.8.00.old”。">
+</Event><Event ErrorLevel="0" Project="DTSDec" Source="..\..\codec\DTSDec\vcproj\DTSDec.vcproj" Description="项目升级成功。">
+</Event><Event ErrorLevel="3" Project="DTSDec" Source="..\..\codec\DTSDec\vcproj\DTSDec.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="PlayerTest.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="PlayerTest.sln" Description="Converted">
+</Event></UpgradeLog>

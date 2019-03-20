@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>85559B00-9D44-4B8A-A4C6-2E61C4DF5883</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Player</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B6EE99CC277D31246A2FB61C85494B36336F0974</key>
+		<string>ssh://shun.chen@192.168.2.21:2048/TTPod-NewPlayer</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>media/player/IOStest/Player/Player.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B6EE99CC277D31246A2FB61C85494B36336F0974</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://shun.chen@192.168.2.21:2048/TTPod-NewPlayer</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B6EE99CC277D31246A2FB61C85494B36336F0974</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B6EE99CC277D31246A2FB61C85494B36336F0974</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TTPod-NewPlayer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

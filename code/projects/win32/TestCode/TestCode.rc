@@ -1,0 +1,357 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_NEUTRAL
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_URL DIALOGEX 0, 0, 567, 308
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open URL......"
+FONT 10, "ËÎÌו", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_URL,7,7,508,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Open",IDC_BUTTON_OPEN,521,7,42,14
+    LISTBOX         IDC_LIST_URL,7,28,555,274,WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_URL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (Simplified) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_SETTING DIALOGEX 0, 0, 75, 209
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "HW Dec",IDC_CHECK_HW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,8,63,12
+    CONTROL         "Same Source",IDC_CHECK_SAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,25,63,12
+    CONTROL         "HTTP PD",IDC_CHECK_PD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,42,63,12
+    CONTROL         "Loop",IDC_CHECK_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,59,63,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 68
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,79
+ PRODUCTVERSION 1,1,0,79
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.1.0.79"
+            VALUE "InternalName", "TestCode.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2017"
+            VALUE "OriginalFilename", "TestCode.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.1.0.79"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About TestCode"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "TestCode, Version 1.1.0.79",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DIALOG_DEBUG DIALOGEX 0, 0, 714, 367
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "@Fixedsys", 400, 0, 0x86
+BEGIN
+    LISTBOX         IDC_LIST_INFO,7,30,700,330,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_FILTER,40,7,402,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Update",IDC_BUTTON_UPDATE,447,7,60,15
+    LTEXT           "Filter",IDC_STATIC,7,7,26,15
+    PUSHBUTTON      "Pause",IDC_BUTTON_PAUSE,516,7,60,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG_DEBUG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 707
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 360
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TESTCODE            ICON                    "TestCode.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_TESTCODE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open File",                   ID_FILE_OPEN
+        MENUITEM "Open URL",                    ID_FILE_OPENURL
+        MENUITEM SEPARATOR
+        MENUITEM "Debug",                       ID_FILE_DEBUG
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "Play"
+    BEGIN
+        MENUITEM "Play",                        ID_PLAY_RUN
+        MENUITEM "Pause",                       ID_PLAY_PAUSE
+        MENUITEM SEPARATOR
+        POPUP "Speed"
+        BEGIN
+            MENUITEM "0.2",                         ID_SPEED_0
+            MENUITEM "0.5",                         ID_SPEED_1
+            MENUITEM "0.8",                         ID_SPEED_2
+            MENUITEM "1.0",                         ID_SPEED_3
+            MENUITEM "1.5",                         ID_SPEED_4
+            MENUITEM "2",                           ID_SPEED_5
+            MENUITEM "5",                           ID_SPEED_6
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Capture",                     ID_PLAY_CAPTURE
+        MENUITEM SEPARATOR
+        MENUITEM "Pasue Download",              ID_PLAY_PASUEDOWNLOAD
+    END
+    POPUP "Stream"
+    BEGIN
+        POPUP "Stream"
+        BEGIN
+            MENUITEM "Stream Auto",                 ID_STREAM_STREAM1
+        END
+        POPUP "Video"
+        BEGIN
+            MENUITEM "Video1",                      ID_VIDEO_VIDEO1
+        END
+        POPUP "Audio"
+        BEGIN
+            MENUITEM "Audio1",                      ID_AUDIO_AUDIO1
+        END
+        POPUP "Subtitle"
+        BEGIN
+            MENUITEM "Subtt1",                      ID_SUBTITLE_SUBTT1
+        END
+    END
+    POPUP "Mux"
+    BEGIN
+        MENUITEM "Start Mux",                   ID_FILE_STARTMUX
+        MENUITEM "Pause Mux",                   ID_FILE_PAUSEMUX
+        MENUITEM "Restart Mux",                 ID_FILE_RESTARTMUX
+        MENUITEM "Stop Mux",                    ID_FILE_STOPMUX
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_TESTCODE ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "TestCode"
+    IDC_TESTCODE            "TESTCODE"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

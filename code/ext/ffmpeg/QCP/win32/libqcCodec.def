@@ -1,0 +1,15 @@
+LIBRARY	qcCodec.dll
+
+EXPORTS
+	ffCreateParser
+	ffDestroyParser
+    qcCreateDecoder
+    qcDestroyDecoder
+	qcEncodeImage
+	qcCreateEncoder
+	qcDestroyEncoder
+	qcColorCvtRotate
+	ffCreateMuxer
+	ffDestroyMuxer
+
+

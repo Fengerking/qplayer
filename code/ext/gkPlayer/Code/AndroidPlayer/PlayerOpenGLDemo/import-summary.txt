@@ -1,0 +1,87 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* PlayerDemo.iml
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets
+* libs/Player.jar => app/libs/Player.jar
+* libs/armeabi/libAACDec.so => app/src/main/jniLibs/armeabi/libAACDec.so
+* libs/armeabi/libAACDec_v7.so => app/src/main/jniLibs/armeabi/libAACDec_v7.so
+* libs/armeabi/libALACDec.so => app/src/main/jniLibs/armeabi/libALACDec.so
+* libs/armeabi/libAMRDec.so => app/src/main/jniLibs/armeabi/libAMRDec.so
+* libs/armeabi/libAPEDec.so => app/src/main/jniLibs/armeabi/libAPEDec.so
+* libs/armeabi/libDTSDec.so => app/src/main/jniLibs/armeabi/libDTSDec.so
+* libs/armeabi/libFLACDec.so => app/src/main/jniLibs/armeabi/libFLACDec.so
+* libs/armeabi/libH264Dec.so => app/src/main/jniLibs/armeabi/libH264Dec.so
+* libs/armeabi/libH264Dec_v7.so => app/src/main/jniLibs/armeabi/libH264Dec_v7.so
+* libs/armeabi/libMP3Dec.so => app/src/main/jniLibs/armeabi/libMP3Dec.so
+* libs/armeabi/libMP3Dec_v7.so => app/src/main/jniLibs/armeabi/libMP3Dec_v7.so
+* libs/armeabi/libMediaCodecJDec.so => app/src/main/jniLibs/armeabi/libMediaCodecJDec.so
+* libs/armeabi/libWMADec.so => app/src/main/jniLibs/armeabi/libWMADec.so
+* libs/armeabi/libaudiofx.so => app/src/main/jniLibs/armeabi/libaudiofx.so
+* libs/armeabi/libaudiofxbundle.so => app/src/main/jniLibs/armeabi/libaudiofxbundle.so
+* libs/armeabi/libaudiofxreverb.so => app/src/main/jniLibs/armeabi/libaudiofxreverb.so
+* libs/armeabi/libclconv.so => app/src/main/jniLibs/armeabi/libclconv.so
+* libs/armeabi/libclconv_v7.so => app/src/main/jniLibs/armeabi/libclconv_v7.so
+* libs/armeabi/libfilematcher.so => app/src/main/jniLibs/armeabi/libfilematcher.so
+* libs/armeabi/libmediaplayer.so => app/src/main/jniLibs/armeabi/libmediaplayer.so
+* libs/armeabi/libmediatag.so => app/src/main/jniLibs/armeabi/libmediatag.so
+* libs/armeabi/libosal.so => app/src/main/jniLibs/armeabi/libosal.so
+* libs/armeabi/libresample.so => app/src/main/jniLibs/armeabi/libresample.so
+* libs/armeabi/libtttextutils.so => app/src/main/jniLibs/armeabi/libtttextutils.so
+* libs/x86/libAACDec.so => app/src/main/jniLibs/x86/libAACDec.so
+* libs/x86/libAACDec_v7.so => app/src/main/jniLibs/x86/libAACDec_v7.so
+* libs/x86/libH264Dec.so => app/src/main/jniLibs/x86/libH264Dec.so
+* libs/x86/libH264Dec_v7.so => app/src/main/jniLibs/x86/libH264Dec_v7.so
+* libs/x86/libMP3Dec.so => app/src/main/jniLibs/x86/libMP3Dec.so
+* libs/x86/libMP3Dec_v7.so => app/src/main/jniLibs/x86/libMP3Dec_v7.so
+* libs/x86/libMediaCodecJDec.so => app/src/main/jniLibs/x86/libMediaCodecJDec.so
+* libs/x86/libaudiofx.so => app/src/main/jniLibs/x86/libaudiofx.so
+* libs/x86/libclconv.so => app/src/main/jniLibs/x86/libclconv.so
+* libs/x86/libclconv_v7.so => app/src/main/jniLibs/x86/libclconv_v7.so
+* libs/x86/libmediaplayer.so => app/src/main/jniLibs/x86/libmediaplayer.so
+* libs/x86/libosal.so => app/src/main/jniLibs/x86/libosal.so
+* libs/x86/libresample.so => app/src/main/jniLibs/x86/libresample.so
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

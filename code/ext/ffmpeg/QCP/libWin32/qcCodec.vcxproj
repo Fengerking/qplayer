@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{18F0796C-1056-4A16-825A-BF87A24C64C9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>qcCodec</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;QCCODEC_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;QCCODEC_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;__QC_OS_WIN32__;__QC_LIB_FFMPEG__;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\include;..\..\..\..\codec\speex\inc;..\..\..\libyuv\include;..\..\..\..\include;..\..\..\..\base;..\..\..\..\util;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4305;4133;4819;4996;4018</DisableSpecificWarnings>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>..\..\..\..\..\bin\win32\qcCodec.dll</OutputFile>
+      <AdditionalLibraryDirectories>.\libffmpeg;..\..\..\libyuv\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;libyuv.lib;libass.lib;libavcodec.lib;libavformat.lib;libavutil.lib;libbluray.lib;libbz2.lib;libcdio.lib;libcdio_paranoia.lib;libfontconfig.lib;libfreetype.lib;libfribidi.lib;libgcrypt.lib;libgme.lib;libgmp.lib;libgnutls.lib;libgpg-error.lib;libharfbuzz.lib;libhogweed.lib;libiconv.lib;libilbc.lib;liblzma.lib;libmfx.lib;libmodplug.lib;libmp3lame.lib;libnettle.lib;libogg.lib;libopus.lib;libpostproc.lib;libsdl2.lib;libsoxr.lib;libspeex.lib;libssh.lib;libswresample.lib;libswscale.lib;libtheora.lib;libvorbis.lib;libvpx.lib;libxml2.lib;libxvidcore.lib;libzlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>qcCodec.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;QCCODEC_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>..\..\..\..\..\bin\win32\qcCodec.dll</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\base\CBitReader.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\inc\config.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\inc\speex\speex.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\inc\speex\speex_bits.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\inc\speex\speex_callbacks.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\inc\speex\speex_header.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\inc\speex\speex_stereo.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\inc\speex\speex_types.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\arch.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\bfin.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\cb_search.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\cb_search_arm4.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\cb_search_bfin.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\cb_search_sse.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\fftwrap.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\filters.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\filters_arm4.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\filters_bfin.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\filters_sse.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\fixed_arm4.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\fixed_arm5e.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\fixed_bfin.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\fixed_debug.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\fixed_generic.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\kiss_fft.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\kiss_fftr.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\lpc.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\lpc_bfin.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\lsp.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\lsp_bfin.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\ltp.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\ltp_arm4.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\ltp_bfin.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\ltp_sse.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\math_approx.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\misc_bfin.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\modes.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\nb_celp.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\os_support.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\quant_lsp.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\quant_lsp_bfin.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\sb_celp.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\smallft.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\stack_alloc.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\vbr.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\vorbis_psy.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\vq.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\vq_arm4.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\vq_bfin.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\vq_sse.h" />
+    <ClInclude Include="..\..\..\..\codec\speex\src\_kiss_fft_guts.h" />
+    <ClInclude Include="..\..\..\..\include\qcData.h" />
+    <ClInclude Include="..\..\..\..\include\qcDef.h" />
+    <ClInclude Include="..\..\..\..\include\qcErr.h" />
+    <ClInclude Include="..\..\..\..\include\qcIO.h" />
+    <ClInclude Include="..\..\..\..\include\qcMsg.h" />
+    <ClInclude Include="..\..\..\..\include\qcParser.h" />
+    <ClInclude Include="..\..\..\..\include\qcType.h" />
+    <ClInclude Include="..\..\..\..\util\UAVParser.h" />
+    <ClInclude Include="..\CBaseFFMuxer.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\CBaseFFParser.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\CFFBaseIO.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\CFFMpegInIO.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\CFFMpegIO.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\CFFMpegParser.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\qcFFLog.h" />
+    <ClInclude Include="qcFFWrap.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\base\CBitReader.cpp" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\bits.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\cb_search.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\exc_10_16_table.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\exc_10_32_table.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\exc_20_32_table.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\exc_5_256_table.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\exc_5_64_table.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\exc_8_128_table.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\fftwrap.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\filters.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\gain_table.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\gain_table_lbr.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\hexc_10_32_table.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\hexc_table.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\high_lsp_tables.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\kiss_fft.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\kiss_fftr.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\lpc.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\lsp.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\lsp_tables_nb.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\ltp.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\modes.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\modes_wb.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\nb_celp.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\quant_lsp.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\sb_celp.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\smallft.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\speex.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\speex_callbacks.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\speex_header.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\stereo.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\vbr.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\vorbis_psy.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\vq.c" />
+    <ClCompile Include="..\..\..\..\codec\speex\src\window.c" />
+    <ClCompile Include="..\..\..\..\util\UAVParser.cpp" />
+    <ClCompile Include="..\CBaseFFMuxer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\CBaseFFParser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\CFFBaseIO.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\CFFMpegInIO.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\CFFMpegIO.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\CFFMpegParser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\qcCodec.c" />
+    <ClCompile Include="..\qcColorCvtR.c" />
+    <ClCompile Include="..\qcEncoder.c" />
+    <ClCompile Include="..\qcFFLog.c" />
+    <ClCompile Include="..\qcFFMuxer.cpp" />
+    <ClCompile Include="..\qcFFParser.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="qcCodecDll.cpp" />
+    <ClCompile Include="qcFFWrap.c" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\codec\speex\inc\speex\speex_config_types.h.in" />
+    <None Include="qcCodec.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="qcCodec.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

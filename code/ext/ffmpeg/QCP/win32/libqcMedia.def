@@ -1,0 +1,8 @@
+LIBRARY	qcCodec.dll
+
+EXPORTS
+    qcCreateDecoder
+    qcDestroyDecoder
+    
+
+

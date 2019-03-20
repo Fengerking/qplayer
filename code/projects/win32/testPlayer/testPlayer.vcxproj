@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CD50F878-2C7E-4005-A302-35E288FB3BF4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>testPlayer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NO_CRYPTO;_RESAMPLE_SMALL_FILTER_;__QC_OS_WIN32__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>.\Include;..\..\..\Include;..\..\..\base;..\..\..\util;..\..\..\io;..\..\..\autotest;..\..\..\io\http2;..\..\..\io\rtmp;..\..\..\projects\win32\testCode;..\..\..\ext\aiTracking;..\..\..\ext\OpenSSL\include;..\..\..\mfw\OMBox;..\..\..\mfw\common;..\..\..\codec\gk\tStretch;..\..\..\codec\gk\audioRSMP;..\..\..\anl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>..\..\..\..\bin\win32\$(ProjectName).exe</OutputFile>
+      <AdditionalDependencies>Ws2_32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\autotest\CTestBase.h" />
+    <ClInclude Include="..\..\..\autotest\CTestInst.h" />
+    <ClInclude Include="..\..\..\autotest\CTestItem.h" />
+    <ClInclude Include="..\..\..\autotest\CTestMng.h" />
+    <ClInclude Include="..\..\..\autotest\CTestPlayer.h" />
+    <ClInclude Include="..\..\..\autotest\CTestTask.h" />
+    <ClInclude Include="..\..\..\base\CBaseObject.h" />
+    <ClInclude Include="..\..\..\base\CBaseSetting.h" />
+    <ClInclude Include="..\..\..\base\CBitReader.h" />
+    <ClInclude Include="..\..\..\base\CBuffTrace.h" />
+    <ClInclude Include="..\..\..\base\CIOReader.h" />
+    <ClInclude Include="..\..\..\base\CMemFile.h" />
+    <ClInclude Include="..\..\..\base\CMsgMng.h" />
+    <ClInclude Include="..\..\..\base\CMutexLock.h" />
+    <ClInclude Include="..\..\..\base\CNodeList.h" />
+    <ClInclude Include="..\..\..\base\CThreadSem.h" />
+    <ClInclude Include="..\..\..\base\CThreadWork.h" />
+    <ClInclude Include="..\..\..\include\qcAna.h" />
+    <ClInclude Include="..\..\..\include\qcCodec.h" />
+    <ClInclude Include="..\..\..\include\qcData.h" />
+    <ClInclude Include="..\..\..\include\qcDef.h" />
+    <ClInclude Include="..\..\..\include\qcErr.h" />
+    <ClInclude Include="..\..\..\include\qcIO.h" />
+    <ClInclude Include="..\..\..\include\qcMsg.h" />
+    <ClInclude Include="..\..\..\include\qcParser.h" />
+    <ClInclude Include="..\..\..\include\qcPlayer.h" />
+    <ClInclude Include="..\..\..\include\qcType.h" />
+    <ClInclude Include="..\..\..\io\CBaseIO.h" />
+    <ClInclude Include="..\..\..\io\CDNSLookUp.h" />
+    <ClInclude Include="..\..\..\io\CFileIO.h" />
+    <ClInclude Include="..\..\..\io\http2\CDNSCache.h" />
+    <ClInclude Include="..\..\..\io\http2\CHTTPClient.h" />
+    <ClInclude Include="..\..\..\io\http2\CHTTPIO2.h" />
+    <ClInclude Include="..\..\..\io\http2\COpenSSL.h" />
+    <ClInclude Include="..\..\..\util\UAVFormatFunc.h" />
+    <CustomBuild Include="..\..\..\util\UAVParser.h" />
+    <ClInclude Include="..\..\..\util\UBuffTrace.h" />
+    <ClInclude Include="..\..\..\util\UFileFunc.h" />
+    <ClInclude Include="..\..\..\util\UIntReader.h" />
+    <ClInclude Include="..\..\..\util\ULibFunc.h" />
+    <ClInclude Include="..\..\..\util\ULogFunc.h" />
+    <ClInclude Include="..\..\..\util\UMsgMng.h" />
+    <ClInclude Include="..\..\..\util\USocketFunc.h" />
+    <ClInclude Include="..\..\..\util\USourceFormat.h" />
+    <ClInclude Include="..\..\..\util\USystemFunc.h" />
+    <ClInclude Include="..\..\..\util\UThreadFunc.h" />
+    <ClInclude Include="..\..\..\util\UUrlParser.h" />
+    <ClInclude Include="..\TestCode\CWndBase.h" />
+    <ClInclude Include="..\TestCode\CWndSlider.h" />
+    <ClInclude Include="..\TestCode\CWndVideo.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="testPlayer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\autotest\CTestBase.cpp" />
+    <ClCompile Include="..\..\..\autotest\CTestInst.cpp" />
+    <ClCompile Include="..\..\..\autotest\CTestItem.cpp" />
+    <ClCompile Include="..\..\..\autotest\CTestMng.cpp" />
+    <ClCompile Include="..\..\..\autotest\CTestPlayer.cpp" />
+    <ClCompile Include="..\..\..\autotest\CTestTask.cpp" />
+    <ClCompile Include="..\..\..\base\CBaseObject.cpp" />
+    <ClCompile Include="..\..\..\base\CBaseSetting.cpp" />
+    <ClCompile Include="..\..\..\base\CBitReader.cpp" />
+    <ClCompile Include="..\..\..\base\CBuffTrace.cpp" />
+    <ClCompile Include="..\..\..\base\CIOReader.cpp" />
+    <ClCompile Include="..\..\..\base\CMemFile.cpp" />
+    <ClCompile Include="..\..\..\base\CMsgMng.cpp" />
+    <ClCompile Include="..\..\..\base\CMutexLock.cpp" />
+    <ClCompile Include="..\..\..\base\CNodeList.cpp" />
+    <ClCompile Include="..\..\..\base\CThreadSem.cpp" />
+    <ClCompile Include="..\..\..\base\CThreadWork.cpp" />
+    <ClCompile Include="..\..\..\io\CBaseIO.cpp" />
+    <ClCompile Include="..\..\..\io\CDNSLookUp.cpp" />
+    <ClCompile Include="..\..\..\io\CFileIO.cpp" />
+    <ClCompile Include="..\..\..\io\http2\CDNSCache.cpp" />
+    <ClCompile Include="..\..\..\io\http2\CHTTPClient.cpp" />
+    <ClCompile Include="..\..\..\io\http2\CHTTPIO2.cpp" />
+    <ClCompile Include="..\..\..\io\http2\COpenSSL.cpp" />
+    <ClCompile Include="..\..\..\util\UAVFormatFunc.cpp" />
+    <ClCompile Include="..\..\..\util\UAVParser.cpp" />
+    <ClCompile Include="..\..\..\util\UBuffTrace.cpp" />
+    <ClCompile Include="..\..\..\util\UFileFunc.cpp" />
+    <ClCompile Include="..\..\..\util\UIntReader.cpp" />
+    <ClCompile Include="..\..\..\util\ULibFunc.cpp" />
+    <ClCompile Include="..\..\..\util\ULogFunc.c" />
+    <ClCompile Include="..\..\..\util\UMsgMng.cpp" />
+    <ClCompile Include="..\..\..\util\USocketFunc.cpp" />
+    <ClCompile Include="..\..\..\util\USourceFormat.cpp" />
+    <ClCompile Include="..\..\..\util\USystemFunc.cpp" />
+    <ClCompile Include="..\..\..\util\UThreadFunc.cpp" />
+    <ClCompile Include="..\..\..\util\UUrlParser.cpp" />
+    <ClCompile Include="..\TestCode\CWndBase.cpp" />
+    <ClCompile Include="..\TestCode\CWndSlider.cpp" />
+    <ClCompile Include="..\TestCode\CWndVideo.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="testPlayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="testPlayer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico" />
+    <Image Include="testPlayer.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

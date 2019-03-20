@@ -1,0 +1,41 @@
+TASK com.example.playerdemo id=141
+  ACTIVITY com.example.playerdemo/.MainActivity 5a97497 pid=10956
+    Local Activity b33a686 State:
+      mResumed=true mStopped=false mFinished=false
+      mChangingConfigurations=false
+      mCurrentConfig={0 1.0 themeSeq = 0 showBtnBg = 0 ?mcc?mnc zh_CN ldltr sw360dp w640dp h336dp 640dpi nrml long land finger -keyb/v/h -nav/h mkbd/? s.63}
+      overrideConfig={0 1.0 themeSeq = 0 showBtnBg = -1 ?mcc?mnc ?locale ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? mkbd/?}
+      DisplayMetrics=DisplayMetrics{density=4.0, width=2560, height=1440, scaledDensity=4.0, xdpi=580.571, ydpi=575.433}
+      mMultiWindowStyle=MultiWindowStyle{type=0, zone=ZONE_UNKNOWN, option=0x00000000, bounds=null, isNull=false, isolatedCenterPoint=Point(0, 0), scale=0.0, specificTaskId=-1, or=0}
+      mLoadersStarted=true
+      FragmentManager misc state:
+        mHost=android.app.Activity$HostCallbacks@35eeb47
+        mContainer=android.app.Activity$HostCallbacks@35eeb47
+        mCurState=5 mStateSaved=false mDestroyed=false
+    ViewRoot:
+      mAdded=true mRemoved=false
+      mConsumeBatchedInputScheduled=false
+      mConsumeBatchedInputImmediatelyScheduled=false
+      mPendingInputEventCount=0
+      mProcessInputEventsScheduled=false
+      mTraversalScheduled=false
+      android.view.ViewRootImpl$NativePreImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$ImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$NativePostImeInputStage: mQueueLength=0
+    Choreographer:
+      mFrameScheduled=false
+      mLastFrameTime=7379202 (118250 ms ago)
+    View Hierarchy:
+      com.android.internal.policy.PhoneWindow$DecorView{21c70dc V.E...... R....... 0,0-2560,1440}
+        android.widget.LinearLayout{b03ff74 V.E...... ........ 0,0-2560,1440}
+          android.view.ViewStub{414c9d G.E...... ......I. 0,0-0,0 #1020469 android:id/action_mode_bar_stub}
+          android.widget.FrameLayout{f93a512 V.E...... ........ 0,0-2560,1440 #1020002 android:id/content}
+            android.widget.RelativeLayout{c14f4e3 V.E...... ........ 0,0-2560,1440}
+              com.example.playerdemo.VideoSurfaceView{21b9ee0 V.E...... ........ 0,0-2560,1440 #7f090000 app:id/VideoView}
+              android.widget.Button{16b1599 VFED..C.. ........ 0,64-194,256 #7f090001 app:id/button1}
+              android.widget.Button{883005e VFED..C.. ........ 194,64-437,256 #7f090003 app:id/button2}
+              android.widget.Button{97fc3f VFED..C.. ........ 437,64-638,256 #7f090004 app:id/button3}
+              android.widget.Button{74bc90c VFED..C.. ........ 638,64-847,256 #7f090005 app:id/buttonSeek}
+              android.view.View{dce7255 V.ED..... ........ 80,80-2480,1360 #7f090006 app:id/touch_area}
+    Looper (main, tid 1) {a7ac46a}
+      (Total messages: 0, polling=false, quitting=false)

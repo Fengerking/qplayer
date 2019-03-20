@@ -1,0 +1,989 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{da44be6d-3e70-44e9-bf68-a12c620ac435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Base Files">
+      <UniqueIdentifier>{ab51c8c7-5e3a-4598-b25b-c3d35640d156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util Files">
+      <UniqueIdentifier>{bc8ccbd2-4dcb-4fd9-91fb-2daed611ee8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files">
+      <UniqueIdentifier>{1518f67d-5caf-4f37-8b6b-5b8e9d0cec3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO Files">
+      <UniqueIdentifier>{5dae6533-f46c-4c1e-be15-814dae498bea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO Files\RTMP">
+      <UniqueIdentifier>{1f51e623-0e1c-4926-abd3-8526d5be3d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO Files\HTTP2">
+      <UniqueIdentifier>{175ce19b-30f5-4119-9900-9e693bcfde6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser Files">
+      <UniqueIdentifier>{66e32982-0c24-44f4-b782-e5a556e4355f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser Files\FLV">
+      <UniqueIdentifier>{f2e9c685-c22e-4db2-9c9e-cf75b0f71b38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser Files\MP4">
+      <UniqueIdentifier>{b022bf55-905e-4db5-a7c0-9654a6e93beb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser Files\TS">
+      <UniqueIdentifier>{87051c96-2f32-41f6-a79d-77888afb2dea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser Files\M3U8">
+      <UniqueIdentifier>{92c9f466-3ab9-460a-b983-5c9d53d1ff80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser Files\M3U8\DRM">
+      <UniqueIdentifier>{65d64e62-d466-4783-97b5-6e3015dd4557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFW Files">
+      <UniqueIdentifier>{1b2c7577-ef17-4afb-8279-c399f782850b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFW Files\Common">
+      <UniqueIdentifier>{ddcacc90-2709-4382-9416-9fec09aa26ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFW Files\Boxes">
+      <UniqueIdentifier>{091be8c9-b047-47af-9332-ea1bea35c3ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFW Files\Render">
+      <UniqueIdentifier>{75bdf692-eaaa-4984-b52e-2071832ed168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFW Files\Source">
+      <UniqueIdentifier>{0c47edbe-87e2-438d-972e-e0e4d2ef4322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFW Files\Decoder">
+      <UniqueIdentifier>{c8555ced-f0ec-4576-b9d5-55b728bd1d7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFW Files\ndk Files">
+      <UniqueIdentifier>{fe8c53af-e6ab-44ce-9697-0d82de7a0136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFW Files\TDStretch">
+      <UniqueIdentifier>{9dfcdbbe-12f5-445c-acb6-27e3e72494d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ana Files">
+      <UniqueIdentifier>{3e313ddf-0fad-4ff8-a593-cc7fe7805f34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFW Files\Enc Files">
+      <UniqueIdentifier>{e27b2896-5412-4c86-ba41-e766a630079e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO Files\ExtLib">
+      <UniqueIdentifier>{a74ea013-3003-47af-9497-1518d4a3f250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Codec Files">
+      <UniqueIdentifier>{5a3446d1-b236-4d22-955b-a4cab6c704d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFW Files\audioRSMP">
+      <UniqueIdentifier>{42e35f22-a8ea-4f06-8807-52aa60c1600a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ext Files">
+      <UniqueIdentifier>{4915c37d-a814-40ae-a98d-2b294b6f98e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ext Files\aiTracking">
+      <UniqueIdentifier>{ea97cd69-1f3e-4db6-a4f4-06e0abaf3937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser Files\RTSP">
+      <UniqueIdentifier>{c734ed70-678c-4929-87e4-1b174151cfa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFW Files\Mux Files">
+      <UniqueIdentifier>{d3bf6e02-3428-4ac2-891f-eb48aa513741}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CVideoDecRnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UTestParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlgDebug.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlgOpenURL.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CWndBase.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CWndSlider.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CWndVideo.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\base\CBaseObject.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\base\CBitReader.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\base\CBuffMng.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\base\CBuffTrace.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\base\CIOReader.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\base\CMsgMng.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\base\CMutexLock.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\base\CNodeList.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\base\CThreadSem.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\base\CThreadWork.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\UAVFormatFunc.cpp">
+      <Filter>Util Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\UAVParser.cpp">
+      <Filter>Util Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\UBuffTrace.cpp">
+      <Filter>Util Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\UFileFunc.cpp">
+      <Filter>Util Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\UIntReader.cpp">
+      <Filter>Util Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\ULibFunc.cpp">
+      <Filter>Util Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\ULogFunc.c">
+      <Filter>Util Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\UMsgMng.cpp">
+      <Filter>Util Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\USocketFunc.cpp">
+      <Filter>Util Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\USourceFormat.cpp">
+      <Filter>Util Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\USystemFunc.cpp">
+      <Filter>Util Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\UThreadFunc.cpp">
+      <Filter>Util Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\util\UUrlParser.cpp">
+      <Filter>Util Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\CBaseIO.cpp">
+      <Filter>IO Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\CFileIO.cpp">
+      <Filter>IO Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\qcIO.cpp">
+      <Filter>IO Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\rtmp\amf.c">
+      <Filter>IO Files\RTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\rtmp\CRTMPIO.cpp">
+      <Filter>IO Files\RTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\rtmp\hashswf.c">
+      <Filter>IO Files\RTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\rtmp\log.c">
+      <Filter>IO Files\RTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\rtmp\parseurl.c">
+      <Filter>IO Files\RTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\rtmp\rtmp.c">
+      <Filter>IO Files\RTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\http2\CDNSCache.cpp">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\http2\CHTTPClient.cpp">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\http2\CHTTPIO2.cpp">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\base\CMemFile.cpp">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\http2\COpenSSL.cpp">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\CBaseParser.cpp">
+      <Filter>Parser Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\qcParser.cpp">
+      <Filter>Parser Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\flv\CFLVParser.cpp">
+      <Filter>Parser Files\FLV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\flv\CFLVTag.cpp">
+      <Filter>Parser Files\FLV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\mp4\CMP4Parser.cpp">
+      <Filter>Parser Files\MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\mp4\CMP4ParserBase.cpp">
+      <Filter>Parser Files\MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\ts\CADTSFrameSpliter.cpp">
+      <Filter>Parser Files\TS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\ts\CCheckTimestampCache.cpp">
+      <Filter>Parser Files\TS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\ts\CFrameSpliter.cpp">
+      <Filter>Parser Files\TS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\ts\CTSParser.cpp">
+      <Filter>Parser Files\TS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\ts\tsbase.cpp">
+      <Filter>Parser Files\TS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\ts\tsparser.cpp">
+      <Filter>Parser Files\TS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\ba\CAdaptiveStreamBA.cpp">
+      <Filter>Parser Files\M3U8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\m3u8\CAdaptiveStreamHLS.cpp">
+      <Filter>Parser Files\M3U8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\AdaptiveStreamParser\CDataBox.cpp">
+      <Filter>Parser Files\M3U8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\m3u8\CHls_entity.cpp">
+      <Filter>Parser Files\M3U8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\m3u8\CHls_manager.cpp">
+      <Filter>Parser Files\M3U8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\m3u8\CHls_parser.cpp">
+      <Filter>Parser Files\M3U8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drm\aes128\aes-internal-dec.c">
+      <Filter>Parser Files\M3U8\DRM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drm\aes128\aes-internal.c">
+      <Filter>Parser Files\M3U8\DRM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drm\aes128\AES_CBC.cpp">
+      <Filter>Parser Files\M3U8\DRM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\drm\normal_hls\CNormalHLSDrm.cpp">
+      <Filter>Parser Files\M3U8\DRM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\qcPlayerEng.cpp">
+      <Filter>MFW Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CBaseClock.cpp">
+      <Filter>MFW Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxAudioDec.cpp">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxAudioRnd.cpp">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxBase.cpp">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxMonitor.cpp">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxRender.cpp">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxSource.cpp">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxVDecRnd.cpp">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxVideoDec.cpp">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\OMBox\CBoxVideoRnd.cpp">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\OMBox\COMBoxMng.cpp">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CBaseAudioRnd.cpp">
+      <Filter>MFW Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CBaseVideoRnd.cpp">
+      <Filter>MFW Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CDDrawRnd.cpp">
+      <Filter>MFW Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CWaveOutRnd.cpp">
+      <Filter>MFW Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CBaseSource.cpp">
+      <Filter>MFW Files\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CQCFFSource.cpp">
+      <Filter>MFW Files\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CQCSource.cpp">
+      <Filter>MFW Files\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CBaseAudioDec.cpp">
+      <Filter>MFW Files\Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CBaseVideoDec.cpp">
+      <Filter>MFW Files\Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CQCAudioDec.cpp">
+      <Filter>MFW Files\Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CQCVideoDec.cpp">
+      <Filter>MFW Files\Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\ndk\CNDKAudioRnd.cpp">
+      <Filter>MFW Files\ndk Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\ndk\CNDKPlayer.cpp">
+      <Filter>MFW Files\ndk Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\ndk\CNDKVDecRnd.cpp">
+      <Filter>MFW Files\ndk Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\ndk\CNDKVideoRnd.cpp">
+      <Filter>MFW Files\ndk Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\ndk\COpenSLESRnd.cpp">
+      <Filter>MFW Files\ndk Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\ndk\jniPlayer.cpp">
+      <Filter>MFW Files\ndk Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\codec\gk\tStretch\TDStretch.cpp">
+      <Filter>MFW Files\TDStretch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\anl\CAnalBase.cpp">
+      <Filter>Ana Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\anl\CAnalDataSender.cpp">
+      <Filter>Ana Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\anl\CAnalPili.cpp">
+      <Filter>Ana Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\anl\CAnalysisMng.cpp">
+      <Filter>Ana Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CQCVideoEnc.cpp">
+      <Filter>MFW Files\Enc Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\ndk\CMediaCodecDec.cpp">
+      <Filter>MFW Files\ndk Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\CQCLibIO.cpp">
+      <Filter>IO Files\ExtLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CQCSpeexDec.cpp">
+      <Filter>MFW Files\Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\base\CBaseSetting.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\http2\CPDFileIO.cpp">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\http2\CPDData.cpp">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\ts\CH2645FrameSpliter.cpp">
+      <Filter>Parser Files\TS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\codec\gk\audioRSMP\aflibConverter.cpp">
+      <Filter>MFW Files\audioRSMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\codec\gk\ColorConv\clconv.c">
+      <Filter>MFW Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CGDIRnd.cpp">
+      <Filter>MFW Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\CDNSLookUp.cpp">
+      <Filter>IO Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ext\aiTracking\CTrackMng.cpp">
+      <Filter>Ext Files\aiTracking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ext\aiTracking\YUVDrawBox.cpp">
+      <Filter>Ext Files\aiTracking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\mp4\CMP4ParserMoov.cpp">
+      <Filter>Parser Files\MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CQCVDecRnd.cpp">
+      <Filter>MFW Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CQCFFConcat.cpp">
+      <Filter>MFW Files\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\rtsp\CRtspParser.cpp">
+      <Filter>Parser Files\RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\rtsp\CRtspParserWrapper.cpp">
+      <Filter>Parser Files\RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlgSetting.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ext\aiTracking\cJSON.c">
+      <Filter>Ext Files\aiTracking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\rtsp\b64.c">
+      <Filter>Parser Files\RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\rtsp\hex_coding.c">
+      <Filter>Parser Files\RTSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\parser\mp4\CMP4ParserFrag.cpp">
+      <Filter>Parser Files\MP4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CExtAVSource.cpp">
+      <Filter>MFW Files\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="CExtSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\io\CExtIO.cpp">
+      <Filter>IO Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CQCAdpcmDec.cpp">
+      <Filter>MFW Files\Decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CExtIOSource.cpp">
+      <Filter>MFW Files\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\mfw\Common\CQCMuxer.cpp">
+      <Filter>MFW Files\Mux Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CVideoDecRnd.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UTestParser.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlgDebug.h">
+      <Filter>Source Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlgOpenURL.h">
+      <Filter>Source Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CWndBase.h">
+      <Filter>Source Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CWndSlider.h">
+      <Filter>Source Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CWndVideo.h">
+      <Filter>Source Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\base\CBaseObject.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\base\CBitReader.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\base\CBuffMng.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\base\CBuffTrace.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\base\CIOReader.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\base\CMsgMng.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\base\CMutexLock.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\base\CNodeList.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\base\CThreadSem.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\base\CThreadWork.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\UAVFormatFunc.h">
+      <Filter>Util Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\UBuffTrace.h">
+      <Filter>Util Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\UFileFunc.h">
+      <Filter>Util Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\UIntReader.h">
+      <Filter>Util Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\ULibFunc.h">
+      <Filter>Util Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\ULogFunc.h">
+      <Filter>Util Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\UMsgMng.h">
+      <Filter>Util Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\USocketFunc.h">
+      <Filter>Util Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\USourceFormat.h">
+      <Filter>Util Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\USystemFunc.h">
+      <Filter>Util Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\UThreadFunc.h">
+      <Filter>Util Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\util\UUrlParser.h">
+      <Filter>Util Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\qcAna.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\qcCodec.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\qcData.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\qcDef.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\qcErr.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\qcIO.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\qcMsg.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\qcParser.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\qcPlayer.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\qcType.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\CBaseIO.h">
+      <Filter>IO Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\CFileIO.h">
+      <Filter>IO Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\rtmp\amf.h">
+      <Filter>IO Files\RTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\rtmp\bytes.h">
+      <Filter>IO Files\RTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\rtmp\CRTMPIO.h">
+      <Filter>IO Files\RTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\rtmp\handshake.h">
+      <Filter>IO Files\RTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\rtmp\http.h">
+      <Filter>IO Files\RTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\rtmp\log.h">
+      <Filter>IO Files\RTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\rtmp\rtmp.h">
+      <Filter>IO Files\RTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\rtmp\rtmp_sys.h">
+      <Filter>IO Files\RTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\http2\CDNSCache.h">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\http2\CHTTPClient.h">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\http2\CHTTPIO2.h">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\base\CMemFile.h">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\http2\COpenSSL.h">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\CBaseParser.h">
+      <Filter>Parser Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\flv\CFLVParser.h">
+      <Filter>Parser Files\FLV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\flv\CFLVTag.h">
+      <Filter>Parser Files\FLV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\mp4\CMP4Parser.h">
+      <Filter>Parser Files\MP4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\ts\bit_t.h">
+      <Filter>Parser Files\TS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\ts\CADTSFrameSpliter.h">
+      <Filter>Parser Files\TS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\ts\CCheckTimestampCache.h">
+      <Filter>Parser Files\TS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\ts\CFrameSpliter.h">
+      <Filter>Parser Files\TS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\ts\cmbasetype.h">
+      <Filter>Parser Files\TS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\ts\CTSParser.h">
+      <Filter>Parser Files\TS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\ts\tsbase.h">
+      <Filter>Parser Files\TS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\ts\tsparser.h">
+      <Filter>Parser Files\TS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\AdaptiveStreamParser\AdaptiveStreamParser.h">
+      <Filter>Parser Files\M3U8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\ba\CAdaptiveStreamBA.h">
+      <Filter>Parser Files\M3U8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\AdaptiveStreamParser\CDataBox.h">
+      <Filter>Parser Files\M3U8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\AdaptiveStreamParser\HLSDRM.h">
+      <Filter>Parser Files\M3U8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\drm\aes128\aes.h">
+      <Filter>Parser Files\M3U8\DRM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\drm\aes128\AES_CBC.h">
+      <Filter>Parser Files\M3U8\DRM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\drm\aes128\aes_i.h">
+      <Filter>Parser Files\M3U8\DRM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\drm\normal_hls\CNormalHLSDrm.h">
+      <Filter>Parser Files\M3U8\DRM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CBaseClock.h">
+      <Filter>MFW Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxAudioDec.h">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxAudioRnd.h">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxBase.h">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxMonitor.h">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxRender.h">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxSource.h">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxVideoDec.h">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\OMBox\CBoxVideoRnd.h">
+      <Filter>MFW Files\Boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CBaseAudioRnd.h">
+      <Filter>MFW Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CBaseVideoRnd.h">
+      <Filter>MFW Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CDDrawRnd.h">
+      <Filter>MFW Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CWaveOutRnd.h">
+      <Filter>MFW Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CBaseSource.h">
+      <Filter>MFW Files\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CQCFFSource.h">
+      <Filter>MFW Files\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CQCSource.h">
+      <Filter>MFW Files\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CBaseAudioDec.h">
+      <Filter>MFW Files\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CBaseVideoDec.h">
+      <Filter>MFW Files\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CQCAudioDec.h">
+      <Filter>MFW Files\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CQCVideoDec.h">
+      <Filter>MFW Files\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\ndk\CNDKVDecRnd.h">
+      <Filter>MFW Files\ndk Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\codec\gk\tStretch\TDStretch.h">
+      <Filter>MFW Files\TDStretch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\anl\CAnalBase.h">
+      <Filter>Ana Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\anl\CAnalDataSender.h">
+      <Filter>Ana Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\anl\CAnalPili.h">
+      <Filter>Ana Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\anl\CAnalysisMng.h">
+      <Filter>Ana Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CQCVideoEnc.h">
+      <Filter>MFW Files\Enc Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\ndk\CMediaCodecDec.h">
+      <Filter>MFW Files\ndk Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\CQCLibIO.h">
+      <Filter>IO Files\ExtLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CQCSpeexDec.h">
+      <Filter>MFW Files\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\base\CBaseSetting.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\http2\CPDFileIO.h">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\http2\CPDData.h">
+      <Filter>IO Files\HTTP2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\ts\CH2645FrameSpliter.h">
+      <Filter>Parser Files\TS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\codec\gk\audioRSMP\aflibconverter.h">
+      <Filter>MFW Files\audioRSMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\codec\gk\audioRSMP\aflibConverterLargeFilter.h">
+      <Filter>MFW Files\audioRSMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\codec\gk\audioRSMP\aflibConverterSmallFilter.h">
+      <Filter>MFW Files\audioRSMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CGDIRnd.h">
+      <Filter>MFW Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\CDNSLookUp.h">
+      <Filter>IO Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ext\aiTracking\CTrackMng.h">
+      <Filter>Ext Files\aiTracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ext\aiTracking\YUVDrawBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CQCVDecRnd.h">
+      <Filter>MFW Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CQCFFConcat.h">
+      <Filter>MFW Files\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\rtsp\common_def.h">
+      <Filter>Parser Files\RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\rtsp\CRtspParser.h">
+      <Filter>Parser Files\RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\rtsp\CRtspParserWrapper.h">
+      <Filter>Parser Files\RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\rtsp\RtspClientAPI.h">
+      <Filter>Parser Files\RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlgSetting.h">
+      <Filter>Source Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ext\aiTracking\cJSON.h">
+      <Filter>Ext Files\aiTracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\rtsp\b64.h">
+      <Filter>Parser Files\RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\parser\rtsp\hex_coding.h">
+      <Filter>Parser Files\RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CExtAVSource.h">
+      <Filter>MFW Files\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="CExtSource.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\io\CExtIO.h">
+      <Filter>IO Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CQCAdpcmDec.h">
+      <Filter>MFW Files\Decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CExtIOSource.h">
+      <Filter>MFW Files\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\mfw\Common\CQCMuxer.h">
+      <Filter>MFW Files\Mux Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="TestCode.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TestCode.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\io\rtmp\readme.txt">
+      <Filter>IO Files\RTMP</Filter>
+    </Text>
+    <Text Include="..\..\..\parser\ts\readme.txt">
+      <Filter>Parser Files\TS</Filter>
+    </Text>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\mfw\ndk\jni\Android.mk">
+      <Filter>MFW Files\ndk Files</Filter>
+    </None>
+    <None Include="..\..\..\mfw\ndk\jni\Android_ndk.mk">
+      <Filter>MFW Files\ndk Files</Filter>
+    </None>
+    <None Include="..\..\..\mfw\ndk\jni\Application.mk">
+      <Filter>MFW Files\ndk Files</Filter>
+    </None>
+    <None Include="..\..\..\mfw\ndk\jni\code_ndk.mk">
+      <Filter>MFW Files\ndk Files</Filter>
+    </None>
+    <None Include="..\..\..\mfw\ndk\jni\Android_play.mk">
+      <Filter>MFW Files\ndk Files</Filter>
+    </None>
+    <None Include="..\..\..\mfw\ndk\jni\onelib_ndk.mk">
+      <Filter>MFW Files\ndk Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\util\UAVParser.h">
+      <Filter>Util Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\parser\m3u8\CAdaptiveStreamHLS.h">
+      <Filter>Parser Files\M3U8</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\parser\m3u8\CHls_entity.h">
+      <Filter>Parser Files\M3U8</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\parser\m3u8\CHls_manager.h">
+      <Filter>Parser Files\M3U8</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\parser\m3u8\CHls_parser.h">
+      <Filter>Parser Files\M3U8</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\mfw\OMBox\CBoxVDecRnd.h">
+      <Filter>MFW Files\Boxes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\mfw\OMBox\COMBoxMng.h">
+      <Filter>MFW Files\Boxes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\mfw\ndk\CNDKAudioRnd.h">
+      <Filter>MFW Files\ndk Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\mfw\ndk\CNDKPlayer.h">
+      <Filter>MFW Files\ndk Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\mfw\ndk\CNDKVideoRnd.h">
+      <Filter>MFW Files\ndk Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\mfw\ndk\COpenSLESRnd.h">
+      <Filter>MFW Files\ndk Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

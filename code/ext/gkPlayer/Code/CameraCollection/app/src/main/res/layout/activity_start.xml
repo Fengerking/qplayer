@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ali.music.media.cameracollection.StartActivity" >
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="84dp"
+        android:text="H264" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button21"
+        android:layout_below="@+id/button21"
+        android:layout_marginTop="48dp"
+        android:text="HEVC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Width"
+        android:id="@+id/Width"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:layout_alignLeft="@+id/Button01"
+        android:layout_alignStart="@+id/Button01" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Height"
+        android:id="@+id/Height"
+        android:layout_marginTop="48dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/Width"
+        android:layout_alignLeft="@+id/Width"
+        android:layout_alignStart="@+id/Width" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bitrate"
+        android:id="@+id/Bitrate"
+        android:layout_marginTop="48dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/Height"
+        android:layout_alignLeft="@+id/Height"
+        android:layout_alignStart="@+id/Height" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="1280"
+        android:id="@+id/nWidthNum"
+        android:layout_alignLeft="@+id/nHeightNum"
+        android:layout_alignStart="@+id/nHeightNum"
+        android:layout_above="@+id/nHeightNum"
+        android:text="1280"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="720"
+        android:id="@+id/nHeightNum"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/Height"
+        android:text="720"
+        android:layout_above="@+id/Bitrate" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="1200"
+        android:id="@+id/nBitrateNum"
+        android:text="1200"
+        android:layout_alignBottom="@+id/Bitrate"
+        android:layout_alignLeft="@+id/nHeightNum"
+        android:layout_alignStart="@+id/nHeightNum" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+LIBRARY	qcOpenSSL.dll
+
+EXPORTS
+	qcOpenSSL_add_all_algorithms
+	qcSSL_load_error_strings
+	qcOPENSSL_init_ssl
+	qcTLS_method
+	qcSSL_CTX_new
+	qcSSL_new
+	qcSSL_set_fd
+	qcSSL_connect
+	qcSSL_read
+	qcSSL_write
+	qcSSL_shutdown
+	qcSSL_free
+	qcSSL_CTX_free
+	qcSSL_get_error
+	qcSSL_set_connect_state
+	qcSSL_do_handshake

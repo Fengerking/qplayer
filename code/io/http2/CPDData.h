@@ -69,7 +69,7 @@ protected:
 	unsigned char *				m_pHeadBuff;
 	int							m_nHeadSize;
 	QCMP4_MOOV_BUFFER			m_moovData;
-	bool						m_moovSave;
+	bool						m_bMoovSave;
 
 	char *						m_pPDLFileName;
 	CObjectList<QCPD_POS_INFO>	m_lstPos;
@@ -86,6 +86,11 @@ protected:
 	int							m_nEmptyTime;
 
 	int							m_nDeleteFile;
+
+	// for debug
+	unsigned char *				m_pSourceData;
+	bool		CheckData(long long llPos, unsigned char * pBuff, int nSize);
+
 
 protected:
 	static int compareFilePos (const void *arg1, const void *arg2);

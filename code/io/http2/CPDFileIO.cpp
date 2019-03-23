@@ -285,8 +285,8 @@ long long CPDFileIO::SetPos (long long llPos, int nFlag)
 
 	QCLOGI ("Set Pos: % 12lld, Read: % 12lld  Down: % 12lld", llPos, m_llReadPos, m_llDownPos);
 	m_bSetNewPos = true;
-	CAutoLock lock(&m_mtLock);
 	CAutoLock lockHttp(&m_mtLockHttp);
+	CAutoLock lock(&m_mtLock);
 	m_llSeekPos = llPos;
 	if (m_llReadPos == llPos)
 	{
@@ -481,13 +481,13 @@ int CPDFileIO::OnWorkItem (void)
 
 		m_mtLockHttp.Lock();
 		nRead = m_pHttpData->Read(m_pBuffData, m_nBuffSize);
-		m_mtLockHttp.Unlock();
 		m_mtLock.Lock();
 		if (nRead > 0)
 		{
 			m_pPDData->RecvData(m_llDownPos, (unsigned char *)m_pBuffData, nRead, QCIO_READ_DATA);
 			m_llDownPos += nRead;
 		}
+		m_mtLockHttp.Unlock();
 		m_mtLock.Unlock();
         if (m_llDownPos > (m_llReadPos + 1024 * 1024))
             qcSleep(1000);

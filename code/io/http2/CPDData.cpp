@@ -17,6 +17,8 @@
 #include "USystemFunc.h"
 #include "ULogFunc.h"
 
+//#define HTTPPD_CHECK_DATA
+
 CPDData::CPDData(CBaseInst * pBaseInst)
 	: CBaseObject(pBaseInst)
 	, m_pIOFile(NULL)
@@ -40,10 +42,18 @@ CPDData::CPDData(CBaseInst * pBaseInst)
 	m_nHeadSize = 1024 * 1024 * 1;
 	m_pHeadBuff = NULL;// new unsigned char[m_nHeadSize];
 	memset(&m_moovData, 0, sizeof(m_moovData));
-	m_moovSave = false;
+	m_bMoovSave = false;
 
 	m_pHeadBuff = new unsigned char[m_nHeadSize];
 	memset(m_pHeadBuff, 0, m_nHeadSize);
+
+#ifdef HTTPPD_CHECK_DATA
+	CFileIO ioSource (m_pBaseInst);
+	ioSource.Open("c:\\temp\\0000\\Mux_000.mp4", 0, QCIO_FLAG_READ);
+	int nRead = (int)ioSource.GetSize();
+	m_pSourceData = new unsigned char[nRead];
+	ioSource.Read(m_pSourceData, nRead, true, 0);
+#endif // HTTPPD_CHECK_DATA
 }
 
 CPDData::~CPDData(void)
@@ -80,19 +90,10 @@ int CPDData::Open(const char * pURL, long long llOffset, int nFlag)
 		}
 
 		CAutoLock lock(&m_mtLockData);
-		int nRead = 0;
-		m_pPos = m_lstPos.GetHeadPosition();
-		while (m_pPos != NULL)
-		{
-			m_pItem = m_lstPos.GetNext(m_pPos);
-			if (m_pItem->llBeg >= m_nHeadSize)
-				break;
-			if (m_pItem->llEnd > m_nHeadSize)
-				nRead = m_nHeadSize - m_pItem->llBeg;
-			else
-				nRead = m_pItem->llEnd - m_pItem->llBeg;
-			m_pIOFile->ReadAt(m_pItem->llBeg, m_pHeadBuff + (int)m_pItem->llBeg, nRead, true, 0);
-		}
+		int nRead = m_nHeadSize;
+		if (nRead > m_pIOFile->GetSize())
+			nRead = m_pIOFile->GetSize();
+		m_pIOFile->ReadAt(0, m_pHeadBuff, nRead, true, 0);
 	}
 
 	return m_bDownLoad ? QC_ERR_NONE : QC_ERR_FAILED;
@@ -103,12 +104,13 @@ int CPDData::Close(void)
 	if (m_pThreadWork != NULL)
 		m_pThreadWork->Stop();
 	QC_DEL_P(m_pThreadWork);
-	m_llEmptySize = 0;
 	
 	SaveMoovData();
 	QC_DEL_A(m_moovData.m_pMoovData);
 	memset(&m_moovData, 0, sizeof(m_moovData));
-	m_moovSave = false;
+
+	m_bMoovSave = false;
+	m_llEmptySize = 0;
 
 	SavePDLInfoFile();
 
@@ -148,11 +150,15 @@ int	CPDData::ReadData(long long llPos, unsigned char * pBuff, int & nSize, int n
 		if (llPos + nSize <= m_nHeadSize)
 		{
 			memcpy(pBuff, m_pHeadBuff + (int)llPos, nSize);
+			//if (!CheckData(llPos, pBuff, nSize))
+			//	return QC_ERR_FAILED;
 			return QC_ERR_NONE;
 		}
-		if (IsMoovAtEnd(llPos) && m_moovData.m_pMoovData != NULL)
+		if (m_moovData.m_pMoovData != NULL && llPos >= m_moovData.m_llMoovPos && IsMoovAtEnd(llPos))
 		{
 			memcpy(pBuff, m_moovData.m_pMoovData + (int)(llPos - m_moovData.m_llMoovPos), nSize);
+			//if (!CheckData(llPos, pBuff, nSize))
+			//	return QC_ERR_FAILED;
 			return QC_ERR_NONE;
 		}
 	}
@@ -173,9 +179,11 @@ int	CPDData::RecvData(long long llPos, unsigned char * pBuff, int nSize, int nFl
 		CAutoLock lockHead(&m_mtLockHead);
 		memcpy(m_pHeadBuff + (int)llPos, pBuff, nSize);
 	}
-	else if ((!m_moovSave && IsMoovAtEnd(llPos)) || (nFlag == QCIO_READ_HEAD))
+	else if (IsMoovAtEnd(llPos))
 	{
 		CAutoLock lockHead(&m_mtLockHead);
+		//if (!CheckData(llPos, pBuff, nSize))
+		//	return QC_ERR_FAILED;
 		if (m_moovData.m_pMoovData == NULL)
 		{
 			m_moovData.m_nMoovSize = (int)(m_llFileSize - llPos);
@@ -184,14 +192,14 @@ int	CPDData::RecvData(long long llPos, unsigned char * pBuff, int nSize, int nFl
 			m_moovData.m_pMoovData = new char[m_moovData.m_nMoovSize];
 			memset(m_moovData.m_pMoovData, 0, m_moovData.m_nMoovSize);
 		}
-
 		if (llPos >= m_moovData.m_llMoovPos)
 		{
 			int nCopySize = nSize;
 			if (llPos + nSize > m_moovData.m_llMoovPos + m_moovData.m_nMoovSize)
 				nCopySize = (int)(m_moovData.m_llMoovPos + m_moovData.m_nMoovSize - llPos);
 			memcpy(m_moovData.m_pMoovData + (int)(llPos - m_moovData.m_llMoovPos), pBuff, nCopySize);
-			m_moovData.m_llRecvPos = llPos + nCopySize;
+			if (m_moovData.m_llRecvPos < llPos + nCopySize)
+				m_moovData.m_llRecvPos = llPos + nCopySize;
 
 			RecordItem(llPos, pBuff, nCopySize, nFlag);
 			return QC_ERR_NONE;
@@ -277,6 +285,8 @@ long long CPDData::GetDownPos(long long llPos)
 
 bool CPDData::IsMoovAtEnd(long long llPos)
 {
+	if (m_bMoovSave)
+		return false;
 	if (!m_pBaseInst->m_bHadOpened && llPos > m_llFileSize / 2 && (m_llFileSize - llPos) < 1024 * 1024 * 64)
 		return true;
 	else
@@ -291,32 +301,34 @@ void CPDData::SaveMoovData(void)
 
 	CObjectList<QCPD_POS_INFO>	lstFailed;
 
-	int nSave = 0;
-	int nRC = 0;
+	int			nSave = 0;
+	long long	llBeg = 0;
+	long long	llEnd = 0;
+	int			nRC = 0;
 	m_pPos = m_lstPos.GetHeadPosition();
 	while (m_pPos != NULL)
 	{
 		m_pItem = m_lstPos.GetNext(m_pPos);
-		if (m_pItem->llBeg < m_moovData.m_llMoovPos)
+		if (m_pItem->llEnd <= m_moovData.m_llMoovPos || m_pItem->llBeg >= m_moovData.m_llRecvPos)
 			continue;
 
-		nSave = (int)(m_pItem->llEnd - m_pItem->llBeg);
-		nRC = SaveData(m_pItem->llBeg, (unsigned char *)(m_moovData.m_pMoovData + (int)(m_pItem->llBeg - m_moovData.m_llMoovPos)), nSave, 0);
+		llBeg = m_pItem->llBeg;
+		if (llBeg < m_moovData.m_llMoovPos)
+			llBeg = m_moovData.m_llMoovPos;
+		llEnd = m_pItem->llEnd;
+		if (llEnd > m_moovData.m_llRecvPos)
+			llEnd = m_moovData.m_llRecvPos;
+		nSave = (int)(llEnd - llBeg);
+		nRC = SaveData(llBeg, (unsigned char *)(m_moovData.m_pMoovData + (int)(llBeg - m_moovData.m_llMoovPos)), nSave, 0);
 		if (nSave != nRC)
 			lstFailed.AddTail(m_pItem);
-	}
-
-	m_pPos = lstFailed.GetHeadPosition();
-	while (m_pPos != NULL)
-	{
-		m_pItem = lstFailed.GetNext(m_pPos);
-		m_lstPos.Remove(m_pItem);
-		m_bModified = true;
 	}
 
 	m_pItem = lstFailed.RemoveHead();
 	while (m_pItem != NULL)
 	{
+		m_bModified = true;
+		m_lstPos.Remove(m_pItem);
 		delete m_pItem;
 		m_pItem = lstFailed.RemoveHead();
 	}
@@ -453,14 +465,6 @@ int	CPDData::ParserInfo (const char * pURL)
 	}
 	AdjustSortList();
 
-	m_moovSave = false;
-	pItem = m_lstPos.GetTail();
-	if (pItem != NULL)
-	{
-		if (pItem->llBeg > nFileSize / 2)
-			m_moovSave = true;
-	}
-
 	delete[]pFileData;
 	delete[]pTextLine;
 
@@ -568,7 +572,8 @@ int	CPDData::OpenCacheFile(void)
 
 	if (m_llFileSize >= m_pIOFile->GetSize())
 		m_llEmptySize = m_pIOFile->GetSize();
-
+	if (m_pIOFile->GetSize() >= m_llFileSize)
+		m_bMoovSave = true;
 	if (m_llFileSize == 0)
 		m_llFileSize = m_pIOFile->GetSize();
 
@@ -716,4 +721,16 @@ int CPDData::compareFilePos(const void *arg1, const void *arg2)
 	QCPD_POS_INFO * pItem1 = *(QCPD_POS_INFO **)arg1;
 	QCPD_POS_INFO * pItem2 = *(QCPD_POS_INFO **)arg2;
 	return (int)(pItem1->llBeg - pItem2->llBeg);
+}
+
+bool CPDData::CheckData(long long llPos, unsigned char * pBuff, int nSize)
+{
+#ifdef HTTPPD_CHECK_DATA
+	if (memcmp(m_pSourceData + (int)llPos, pBuff, nSize))
+		return false;
+	else
+		return true;
+#else
+	return true;
+#endif //HTTPPD_CHECK_DATA
 }

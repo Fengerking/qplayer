@@ -216,6 +216,7 @@ LOCAL_SRC_FILES :=	\
 					$(MY_PATH_MFW)/ndk/CNDKVideoRnd.cpp		\
 					$(MY_PATH_MFW)/ndk/CNDKVDecRnd.cpp		\
 					$(MY_PATH_MFW)/ndk/CMediaCodecDec.cpp	\
+					$(MY_PATH_MFW)/ndk/CAudioTrack.cpp		\
 					$(MY_PATH_MFW)/ndk/CJniEnvUtil.cpp		\
 					$(MY_PATH_MFW)/ndk/CNDKPlayer.cpp		\
 					$(MY_PATH_MFW)/ndk/jniPlayer.cpp		\

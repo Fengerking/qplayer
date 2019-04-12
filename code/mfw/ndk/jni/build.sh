@@ -1,14 +1,14 @@
 ndk-build
 
-cp ../libs/x86/libQPlayer.so ../../../projects/android/qplayerTest/app/libs/x86/
-cp ../libs/armeabi-v7a/libQPlayer.so ../../../projects/android/qplayerTest/app/libs/armeabi-v7a/
-cp ../libs/arm64-v8a/libQPlayer.so ../../../projects/android/qplayerTest/app/libs/arm64-v8a/
-cp ../libs/armeabi/libQPlayer.so ../../../projects/android/qplayerTest/app/libs/armeabi/
+#cp ../libs/x86/libQPlayer.so ../../../projects/android/qplayerTest/app/libs/x86/
+#cp ../libs/armeabi-v7a/libQPlayer.so ../../../projects/android/qplayerTest/app/libs/armeabi-v7a/
+#cp ../libs/arm64-v8a/libQPlayer.so ../../../projects/android/qplayerTest/app/libs/arm64-v8a/
+#cp ../libs/armeabi/libQPlayer.so ../../../projects/android/qplayerTest/app/libs/armeabi/
 
-cp ../libs/x86/libQPlayer.so ../../../projects/android/samplePlayer/app/libs/x86/
-cp ../libs/armeabi-v7a/libQPlayer.so ../../../projects/android/samplePlayer/app/libs/armeabi-v7a/
-cp ../libs/arm64-v8a/libQPlayer.so ../../../projects/android/samplePlayer/app/libs/arm64-v8a/
-cp ../libs/armeabi/libQPlayer.so ../../../projects/android/samplePlayer/app/libs/armeabi/
+#cp ../libs/x86/libQPlayer.so ../../../projects/android/samplePlayer/app/libs/x86/
+#cp ../libs/armeabi-v7a/libQPlayer.so ../../../projects/android/samplePlayer/app/libs/armeabi-v7a/
+#cp ../libs/arm64-v8a/libQPlayer.so ../../../projects/android/samplePlayer/app/libs/arm64-v8a/
+#cp ../libs/armeabi/libQPlayer.so ../../../projects/android/samplePlayer/app/libs/armeabi/
 
 cp ../libs/x86/libQPlayer.so ../../../../../qplayer-sdk/android/qplayerTest/app/libs/x86/
 cp ../libs/armeabi-v7a/libQPlayer.so ../../../../../qplayer-sdk/android/qplayerTest/app/libs/armeabi-v7a/

@@ -253,6 +253,8 @@ bool CDDrawRnd::CreateDD (void)
 	m_ddsd.ddpfPixelFormat.dwFourCC = m_dwFourCC;
 	m_ddsd.ddpfPixelFormat.dwYUVBitCount = 8;
 	m_pDD->CreateSurface(&m_ddsd, &m_pDDSOffScr, NULL);
+	if (m_pDDSOffScr == NULL)
+		return false;
 
 	HRESULT ddRval = DDERR_WASSTILLDRAWING;
 	while(ddRval == DDERR_WASSTILLDRAWING)

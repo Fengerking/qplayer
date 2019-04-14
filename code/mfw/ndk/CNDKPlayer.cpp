@@ -112,9 +112,10 @@ int CNDKPlayer::Init (JavaVM * jvm, JNIEnv* env, jclass clsPlayer, jobject objPl
 	else
 	{
 //		m_pRndAudio = new COpenSLESRnd (m_pBaseInst, NULL);
-		m_pRndAudio = new CNDKAudioRnd (m_pBaseInst, NULL);
+//		m_pRndAudio = new CNDKAudioRnd (m_pBaseInst, NULL);
+		m_pRndAudio = new CAudioTrack (m_pBaseInst, NULL);
 	}
-	((CNDKAudioRnd *)m_pRndAudio)->SetNDK (jvm, env, clsPlayer, objPlayer);
+	((CAudioTrack *)m_pRndAudio)->SetNDK (jvm, env, clsPlayer, objPlayer);
 	m_Player.SetParam (m_Player.hPlayer, QCPLAY_PID_EXT_AudioRnd, m_pRndAudio);
 		
 	m_nPlayFlag = nFlag & 0X0FFFFFFF;

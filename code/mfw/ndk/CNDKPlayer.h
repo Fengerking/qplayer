@@ -22,6 +22,7 @@
 #include "CNDKVideoRnd.h"
 #include "CNDKVDecRnd.h"
 #include "COpenSLESRnd.h"
+#include "CAudioTrack.h"
 
 #include "UMsgMng.h"
 

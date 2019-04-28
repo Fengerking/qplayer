@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#888888" >
+
+    <RelativeLayout
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000" >
+
+        <com.qiniu.sampleplayer.MoveSlider
+            android:id="@+id/sldView"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+
+            <RelativeLayout
+                android:id="@+id/layVideo1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000000" >
+
+            <SurfaceView
+                android:id="@+id/svVideo1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000000"
+                android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:id="@+id/imgVideo1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#0000FF"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layVideo2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#0000FF" >
+
+                <SurfaceView
+                    android:id="@+id/svVideo2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:id="@+id/imgVideo2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#00FF00"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layVideo3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#00FF00" >
+
+                <SurfaceView
+                    android:id="@+id/svVideo3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:id="@+id/imgVideo3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#FF0000"/>
+
+            </RelativeLayout>
+
+        </com.qiniu.sampleplayer.MoveSlider>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

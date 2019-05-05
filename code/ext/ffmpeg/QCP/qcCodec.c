@@ -340,7 +340,9 @@ int qcCreateDecoder (QC_Codec_Func * pCodec, void * pFormat)
 		int nTemps[] = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21};
 		char cCpuName[512];
 		memset(cCpuName, 0, sizeof(cCpuName));
-		for(int i = (sizeof(nTemps)/sizeof(nTemps[0])) - 1 ; i >= 0; i--)
+		int nCount = (sizeof(nTemps)/sizeof(nTemps[0])) - 1;
+		int i = 0;
+		for(i = nCount; i >= 0; i--)
 		{
 			sprintf(cCpuName, "/sys/devices/system/cpu/cpu%d", nTemps[i]);
 			int nOk = access(cCpuName, F_OK);
@@ -519,7 +521,8 @@ int qcCodec_GetBuff_V1(void * hCodec, QC_DATA_BUFF ** ppBuff)
 			pContext->pFrmAudio->nChannels = pContext->pAVFrm->channels;
 			pContext->pFrmAudio->nFormat = pContext->pAVFrm->format;
 			pContext->pFrmAudio->nNBSamples = pContext->pAVFrm->nb_samples;
-			for (int i = 0; i < 8; i++)
+			int i = 0;
+			for (i = 0; i < 8; i++)
 			{
 				pContext->pFrmAudio->pDataBuff[i] = (char *)pContext->pAVFrm->data[i];
 				pContext->pFrmAudio->nDataSize[i] = pContext->pAVFrm->linesize[i];
